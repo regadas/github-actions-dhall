@@ -10,7 +10,7 @@ jobs:
           who-to-greet: Mona the Octocat
       - id: echo
         name: "Echo the greeting's time"
-        run: "echo echo 'The time was ${{ steps.hello.outputs.time }}.'"
+        run: "echo 'The time was ${{ steps.hello.outputs.time }}.'"
 name: Greeting
 on:
-  - push
+  push: {}
