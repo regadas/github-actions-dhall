@@ -1,0 +1,14 @@
+let On = ./On.dhall
+
+let Env = ./Env.dhall
+
+let Defaults = ./Defaults.dhall
+
+let Job = ./Job.dhall
+
+in  { name : Text
+    , on : On
+    , env : Optional Env
+    , defaults : Optional Defaults
+    , jobs : List { mapKey : Text, mapValue : Job }
+    }
