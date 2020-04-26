@@ -6,9 +6,12 @@ let RunsOn = ./RunsOn.dhall
 
 let Step = ./Step.dhall
 
+let Strategy = ./Strategy.dhall
+
 in  { name : Text
     , needs : Optional (List Text)
     , runs-on : RunsOn
+    , strategy : Optional Strategy
     , outputs : Optional (List { mapKey : Text, mapValue : Text })
     , env : Optional Env
     , defaults : Optional Defaults
