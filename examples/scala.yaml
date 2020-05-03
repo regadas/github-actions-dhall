@@ -1,0 +1,78 @@
+jobs:
+  build:
+    name: Build
+    needs:
+      - checks
+    runs-on: ubuntu-latest
+    steps:
+      - id: checkout
+        name: checkout master
+        uses: "actions/checkout@v2.1.0"
+      - name: generate cache key
+        run: |
+          shasum build.sbt \
+            project/plugins.sbt \
+            project/build.properties \
+            project/Dependencies.scala > gha.cache.tmp
+      - name: "~/.sbt cache"
+        uses: "actions/cache@v1"
+        with:
+          key: "${{ runner.os }}-sbt-${{ hashFiles('gha.cache.tmp') }}"
+          path: "~/.sbt"
+          restore-keys: sbt
+      - name: "~/.cache/coursier cache"
+        uses: "actions/cache@v1"
+        with:
+          key: "${{ runner.os }}-coursier-${{ hashFiles('gha.cache.tmp') }}"
+          path: "~/.cache/coursier"
+          restore-keys: coursier
+      - name: "Java ${{ matrix.scala}} setup"
+        uses: "actions/setup-java@v1"
+        with:
+          architecture: x64
+          java-package: jdk
+          java-version: "${{ matrix.scala}}"
+      - name: run tests
+        run: "sbt \"++${{ matrix.scala}} test\""
+    strategy:
+      matrix:
+        java:
+          - '8.0.232'
+          - '11.0.5'
+        scala:
+          - '2.11.12'
+          - '2.12.11'
+  checks:
+    name: Checks
+    runs-on: ubuntu-latest
+    steps:
+      - id: checkout
+        name: checkout master
+        uses: "actions/checkout@v2.1.0"
+      - name: generate cache key
+        run: |
+          shasum build.sbt \
+            project/plugins.sbt \
+            project/build.properties \
+            project/Dependencies.scala > gha.cache.tmp
+      - name: "~/.sbt cache"
+        uses: "actions/cache@v1"
+        with:
+          key: "${{ runner.os }}-sbt-${{ hashFiles('gha.cache.tmp') }}"
+          path: "~/.sbt"
+          restore-keys: sbt
+      - name: "~/.cache/coursier cache"
+        uses: "actions/cache@v1"
+        with:
+          key: "${{ runner.os }}-coursier-${{ hashFiles('gha.cache.tmp') }}"
+          path: "~/.cache/coursier"
+          restore-keys: coursier
+      - name: Java 11 setup
+        uses: "actions/setup-java@v1"
+        with:
+          architecture: x64
+          java-package: jdk
+          java-version: '11'
+      - name: scalafmt
+        run: sbt scalafmtCheckAll scalafmtSbtCheck
+name: Greeting
