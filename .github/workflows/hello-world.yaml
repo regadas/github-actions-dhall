@@ -13,7 +13,4 @@ jobs:
         run: "echo 'The time was ${{ steps.hello.outputs.time }}.'"
 name: Greeting
 on:
-  pull_request:
-  push:
-      branches:
-        - "master"
+  push: {}

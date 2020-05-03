@@ -1,13 +1,17 @@
 
 SRC=$(wildcard examples/*.dhall)
-EXAMPLES=$(SRC:examples/%.dhall=.github/workflows/%.yaml)
+EXAMPLES=$(SRC:examples/%.dhall=examples/%.yaml)
 
-.github/workflows/%.yaml: examples/%.dhall
+all: examples gh-worflow-update
+
+examples/%.yaml: examples/%.dhall
 	dhall-to-yaml --file $< > $@
 
 examples: $(EXAMPLES)
 
-update:
+gh-worflow-update:
+	cp examples/hello-world.yaml .github/workflows/hello-world.yaml
 
-clean: 
-	rm .github/workflows/*.yaml
+
+clean: $(EXAMPLES)
+	rm $^
