@@ -17,4 +17,5 @@ in  { name : Text
     , defaults : Optional Defaults
     , steps : List Step
     , timeout-minutes : Optional Natural
+    , if : Optional Text
     }

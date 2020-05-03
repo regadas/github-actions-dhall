@@ -76,3 +76,5 @@ jobs:
       - name: scalafmt
         run: sbt scalafmtCheckAll scalafmtSbtCheck
 name: Greeting
+on:
+  push: {}

@@ -10,4 +10,5 @@ in  { needs = None (List Text)
     , env = None Env
     , defaults = None Defaults
     , timeout-minutes = None Natural
+    , if = None Text
     }

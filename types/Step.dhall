@@ -15,4 +15,6 @@ in  { id : Optional Text
     , with : Optional (List { mapKey : Text, mapValue : Text })
     , continue-on-error : Optional Bool
     , strategy : Optional Strategy
+    , if : Optional Text
+    , working-directory : Optional Text
     }

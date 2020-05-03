@@ -7,4 +7,6 @@ in  { env = None Env
     , continue-on-error = None Bool
     , with = None (List { mapKey : Text, mapValue : Text })
     , strategy = None Strategy
+    , if = None Text
+    , working-directory = None Text
     }
