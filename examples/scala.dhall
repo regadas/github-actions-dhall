@@ -1,4 +1,5 @@
-let GithubActions = ../package.dhall
+let GithubActions =
+      ../package.dhall sha256:f707e8fea087d72b5a1da4e4564557568b8f80f1c5d68b3e7bbd9c17c22ee38a
 
 let matrix =
       toMap { java = [ "8.0.232", "11.0.5" ], scala = [ "2.11.12", "2.12.11" ] }
