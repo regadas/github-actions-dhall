@@ -7,7 +7,7 @@ let RunsOn = ./RunsOn.dhall
 let Strategy = ./Strategy.dhall
 
 in  { id : Optional Text
-    , name : Text
+    , name : Optional Text
     , env : Optional Env
     , run : Optional Text
     , uses : Optional Text

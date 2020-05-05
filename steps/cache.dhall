@@ -3,7 +3,7 @@ let Step = ../schemas/Step.dhall
 in    λ(args : { path : Text, key : Text, hashFile : Text })
     → Step::{
       , id = None Text
-      , name = "${args.path} cache"
+      , name = Some "${args.path} cache"
       , uses = Some "actions/cache@v1"
       , run = None Text
       , with = Some
