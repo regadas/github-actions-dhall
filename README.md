@@ -7,7 +7,8 @@ Typecheck, template and modularize your Github Action definitions with [Dhall](h
 ### Hello World
 
 ```js
-let GithubActions = ../package.dhall
+let GithubActions =
+      ../package.dhall sha256:b42b062af139587666185c6fb72cc2994aa85a30065324174760b7d29a9d81c9
 
 let helloWorld =
       GithubActions.steps.helloWorld
@@ -38,32 +39,36 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - id: hello
-        name: Hello World
+      - name: Hello World
         uses: "actions/hello-world-javascript-action@v1"
         with:
           who-to-greet: Mona the Octocat
-      - id: echo
-        name: "Echo the greeting's time"
+      - name: "Echo the greeting's time"
         run: "echo 'The time was ${{ steps.hello.outputs.time }}.'"
 name: Greeting
 on:
   push: {}
 ```
 
+#### Try it!
+
+```bash
+curl https://raw.githubusercontent.com/regadas/github-actions-dhall/master/examples/hello-world.dhall | dhall-to-yaml
+```
+
 ### Scala
 
 ```js
-let GithubActions = ../package.dhall
+let GithubActions =
+      ../package.dhall sha256:b42b062af139587666185c6fb72cc2994aa85a30065324174760b7d29a9d81c9
 
 let matrix =
       toMap { java = [ "8.0.232", "11.0.5" ], scala = [ "2.11.12", "2.12.11" ] }
 
 let setup =
-      [ GithubActions.steps.checkout { name = "checkout master" }
+      [ GithubActions.steps.checkout
       , GithubActions.steps.run
-          { name = "generate cache key"
-          , run =
+          { run =
               ''
               shasum build.sbt \
                 project/plugins.sbt \
@@ -82,40 +87,37 @@ let setup =
 
 in  GithubActions.Workflow::{
     , name = "Greeting"
-    , on = GithubActions.On::{ push = Some GithubActions.Push::{=} }
+    , on = GithubActions.On::{
+      , push = Some GithubActions.Push::{=}
+      , pull_request = Some GithubActions.PullRequest::{=}
+      }
     , jobs = toMap
         { checks = GithubActions.Job::{
           , name = "Checks"
-          , runs-on = GithubActions.RunsOn.Type.ubuntu-latest
+          , runs-on = GithubActions.types.RunsOn.ubuntu-latest
           , steps =
                 setup
-              # [ GithubActions.steps.java-setup
-                    { name = "Java 11 setup", java-version = "11" }
+              # [ GithubActions.steps.java-setup { java-version = "11" }
                 , GithubActions.steps.run
-                    { name = "scalafmt"
-                    , run = "sbt scalafmtCheckAll scalafmtSbtCheck"
-                    }
+                    { run = "sbt scalafmtCheckAll scalafmtSbtCheck" }
                 ]
           }
         , build = GithubActions.Job::{
           , name = "Build"
           , needs = Some [ "checks" ]
           , strategy = Some GithubActions.Strategy::{ matrix = matrix }
-          , runs-on = GithubActions.RunsOn.Type.ubuntu-latest
+          , runs-on = GithubActions.types.RunsOn.ubuntu-latest
           , steps =
                 setup
               # [ GithubActions.steps.java-setup
-                    { name = "Java \${{ matrix.scala}} setup"
-                    , java-version = "\${{ matrix.scala}}"
-                    }
+                    { java-version = "\${{ matrix.scala}}" }
                 , GithubActions.steps.run
-                    { name = "run tests"
-                    , run = "sbt \"++\${{ matrix.scala}} test\""
-                    }
+                    { run = "sbt \"++\${{ matrix.scala}} test\"" }
                 ]
           }
         }
     }
+
 ```
 
 ```yaml
@@ -126,21 +128,12 @@ jobs:
       - checks
     runs-on: ubuntu-latest
     steps:
-      - id: checkout
-        name: checkout master
-        uses: "actions/checkout@v2.1.0"
-      - name: generate cache key
-        run: |
+      - uses: "actions/checkout@v2.1.0"
+      - run: |
           shasum build.sbt \
             project/plugins.sbt \
             project/build.properties \
             project/Dependencies.scala > gha.cache.tmp
-      - name: Java 11 setup
-        uses: "actions/setup-java@v1"
-        with:
-          architecture: x64
-          java-package: jdk
-          java-version: '11'
       - name: "~/.sbt cache"
         uses: "actions/cache@v1"
         with:
@@ -153,8 +146,13 @@ jobs:
           key: "${{ runner.os }}-coursier-${{ hashFiles('gha.cache.tmp') }}"
           path: "~/.cache/coursier"
           restore-keys: coursier
-      - name: run tests
-        run: sbt test
+      - name: "java ${{ matrix.scala}} setup"
+        uses: "actions/setup-java@v1"
+        with:
+          architecture: x64
+          java-package: jdk
+          java-version: "${{ matrix.scala}}"
+      - run: "sbt \"++${{ matrix.scala}} test\""
     strategy:
       matrix:
         java:
@@ -167,21 +165,12 @@ jobs:
     name: Checks
     runs-on: ubuntu-latest
     steps:
-      - id: checkout
-        name: checkout master
-        uses: "actions/checkout@v2.1.0"
-      - name: generate cache key
-        run: |
+      - uses: "actions/checkout@v2.1.0"
+      - run: |
           shasum build.sbt \
             project/plugins.sbt \
             project/build.properties \
             project/Dependencies.scala > gha.cache.tmp
-      - name: Java 11 setup
-        uses: "actions/setup-java@v1"
-        with:
-          architecture: x64
-          java-package: jdk
-          java-version: '11'
       - name: "~/.sbt cache"
         uses: "actions/cache@v1"
         with:
@@ -194,17 +183,21 @@ jobs:
           key: "${{ runner.os }}-coursier-${{ hashFiles('gha.cache.tmp') }}"
           path: "~/.cache/coursier"
           restore-keys: coursier
-      - name: scalafmt
-        run: sbt scalafmtCheckAll scalafmtSbtCheck
-    strategy:
-      matrix:
-        java:
-          - '8.0.232'
-          - '11.0.5'
-        scala:
-          - '2.11.12'
-          - '2.12.11'
+      - name: java 11 setup
+        uses: "actions/setup-java@v1"
+        with:
+          architecture: x64
+          java-package: jdk
+          java-version: '11'
+      - run: sbt scalafmtCheckAll scalafmtSbtCheck
 name: Greeting
 on:
+  pull_request: {}
   push: {}
+```
+
+#### Try it!
+
+```bash
+curl https://raw.githubusercontent.com/regadas/github-actions-dhall/master/examples/scala.dhall | dhall-to-yaml
 ```
