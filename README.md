@@ -4,11 +4,22 @@ Typecheck, template and modularize your Github Action definitions with [Dhall](h
 
 ## Usage
 
+Import the `github actions` definitions as a `Dhall` package using:
+
+```js
+let GithubActions =
+      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:b42b062af139587666185c6fb72cc2994aa85a30065324174760b7d29a9d81c9
+```
+
+[Workflow](https://github.com/regadas/github-actions-dhall/blob/da72bc0f4e90cd421af74498b027318b166f6882/types/Workflow.dhall) definition can be done by using the schema pattern and setting the appropriate values.
+
+## Examples
+
 ### Hello World
 
 ```js
 let GithubActions =
-      ../package.dhall sha256:b42b062af139587666185c6fb72cc2994aa85a30065324174760b7d29a9d81c9
+      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:b42b062af139587666185c6fb72cc2994aa85a30065324174760b7d29a9d81c9
 
 let helloWorld =
       GithubActions.steps.helloWorld
@@ -60,7 +71,7 @@ curl https://raw.githubusercontent.com/regadas/github-actions-dhall/master/examp
 
 ```js
 let GithubActions =
-      ../package.dhall sha256:b42b062af139587666185c6fb72cc2994aa85a30065324174760b7d29a9d81c9
+      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:b42b062af139587666185c6fb72cc2994aa85a30065324174760b7d29a9d81c99
 
 let matrix =
       toMap { java = [ "8.0.232", "11.0.5" ], scala = [ "2.11.12", "2.12.11" ] }
