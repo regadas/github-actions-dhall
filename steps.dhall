@@ -10,4 +10,10 @@
     ./steps/java-setup.dhall sha256:d2f618e66d0e2f841ef043fe16501cef5ffdf412fd7d4bd74f3f922cab745568
 , helloWorld =
     ./steps/helloWorld.dhall sha256:119e5f24031dd30ebf94b9a8c7cfda7ac1da271effff60dd9d7542f932ed5145
+, gpg-setup =
+    ./steps/gpg-setup.dhall sha256:d58e53f881fcd63053ac902fe97e842b56c00576adf93007c2a8a6370bb843f0
+, scala-setup =
+    ./steps/scala-setup.dhall sha256:98838bfccd927384252d98d56893b7afb0d356483c888e7d4c1eaaa5aac20e6a
+, sbt-ci-release =
+    ./steps/sbt-ci-release.dhall sha256:e1a6e31166b6ced82265a1880991b3b5de55f8c325bc03da0e547f2abc7ef72b
 }
