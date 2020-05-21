@@ -1,9 +1,9 @@
 let GithubActions =
-      ../package.dhall sha256:b42b062af139587666185c6fb72cc2994aa85a30065324174760b7d29a9d81c9
+      ../package.dhall sha256:3eec947980724a16fad54b449fddb03d51dabfed94e9982662f58249cf88255e
 
 let setup =
       [ GithubActions.steps.checkout
-      , GithubActions.steps.scala-setup
+      , GithubActions.steps.java-setup { java-version = "11" }
       , GithubActions.steps.gpg-setup
       , GithubActions.steps.sbt-ci-release
           { ref = "\${{ github.ref }}"
