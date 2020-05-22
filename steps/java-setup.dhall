@@ -9,8 +9,6 @@ in    λ(args : { java-version : Text })
       , with = Some
           ( toMap
               { java-version = args.java-version
-              , java-package = "jdk"
-              , architecture = "x64"
               }
           )
       }
