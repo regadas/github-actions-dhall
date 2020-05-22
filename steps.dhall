@@ -7,7 +7,7 @@
 , cache =
     ./steps/cache.dhall sha256:5db7e7c9393fb2856c7a1fd1bde71669893655b91dc092b961acc6570fb4e6ab
 , java-setup =
-    ./steps/java-setup.dhall sha256:42b26f0901beba4d060b809194f04b4055bbab33ea5503ce6270319df92adfca
+    ./steps/java-setup.dhall sha256:19b19e8a5612ec1acc45f5da691cb674344bb489b4b110d0467bf7838d19aadc
 , helloWorld =
     ./steps/helloWorld.dhall sha256:119e5f24031dd30ebf94b9a8c7cfda7ac1da271effff60dd9d7542f932ed5145
 , gpg-setup =
