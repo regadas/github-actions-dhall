@@ -212,3 +212,11 @@ on:
 ```bash
 curl https://raw.githubusercontent.com/regadas/github-actions-dhall/master/examples/scala.dhall | dhall-to-yaml
 ```
+
+### Scala and sbt-ci-release
+
+Have a look at the [release-scala.dhall](examples/release-scala.dhall) example.
+
+```bash
+curl https://raw.githubusercontent.com/regadas/github-actions-dhall/master/examples/release-scala.dhall | dhall-to-yaml
+```
