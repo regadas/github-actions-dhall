@@ -1,4 +1,4 @@
-let Step = ../schemas/Step.dhall
+let Step = ../../schemas/Step.dhall
 
 in    λ(args : { ref : Text, pgpPassphrase: Text, pgpSecret: Text, sonatypePassword: Text, sonatypeUsername: Text })
     → Step::{

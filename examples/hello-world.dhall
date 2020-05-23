@@ -1,5 +1,5 @@
 let GithubActions =
-      ../package.dhall sha256:b42b062af139587666185c6fb72cc2994aa85a30065324174760b7d29a9d81c9
+      ../package.dhall sha256:70379601fc41305d287544ff1b368e44e3ac0d8b601f0e15afa36b651a8ffe07
 
 let helloWorld =
       GithubActions.steps.helloWorld

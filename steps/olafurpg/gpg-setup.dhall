@@ -1,4 +1,4 @@
-let Step = ../schemas/Step.dhall
+let Step = ../../schemas/Step.dhall
 
 in Step::{
     , id = None Text

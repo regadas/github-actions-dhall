@@ -1,5 +1,5 @@
 let GithubActions =
-      ../package.dhall sha256:b42b062af139587666185c6fb72cc2994aa85a30065324174760b7d29a9d81c9
+      ../package.dhall sha256:70379601fc41305d287544ff1b368e44e3ac0d8b601f0e15afa36b651a8ffe07
 
 let matrix =
       toMap { java = [ "8.0.232", "11.0.5" ], scala = [ "2.11.12", "2.12.11" ] }
@@ -44,7 +44,7 @@ in  GithubActions.Workflow::{
         , build = GithubActions.Job::{
           , name = "Build"
           , needs = Some [ "checks" ]
-          , strategy = Some GithubActions.Strategy::{ matrix = matrix }
+          , strategy = Some GithubActions.Strategy::{ matrix }
           , runs-on = GithubActions.types.RunsOn.ubuntu-latest
           , steps =
                 setup

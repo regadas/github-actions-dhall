@@ -1,11 +1,11 @@
 let GithubActions =
-      ../package.dhall sha256:afd0a65b78c18a6c2aef93469b6457b19559a8125576d7f49da0729d3c5a2ea6
+      ../package.dhall sha256:70379601fc41305d287544ff1b368e44e3ac0d8b601f0e15afa36b651a8ffe07
 
 let setup =
       [ GithubActions.steps.checkout
-      , GithubActions.steps.java-setup { java-version = "11" }
-      , GithubActions.steps.gpg-setup
-      , GithubActions.steps.sbt-ci-release
+      , GithubActions.steps.olafurpg/java-setup { java-version = "11" }
+      , GithubActions.steps.olafurpg/gpg-setup
+      , GithubActions.steps.olafurpg/sbt-ci-release
           { ref = "\${{ github.ref }}"
           , pgpPassphrase = "\${{ secrets.PGP_PASSPHRASE }}"
           , pgpSecret = "\${{ secrets.PGP_SECRET }}"
@@ -18,8 +18,8 @@ in  GithubActions.Workflow::{
     , name = "Release"
     , on = GithubActions.On::{
       , push = Some GithubActions.Push::{
-          , branches = Some [ "master" ]
-          , tags = Some ["*"]
+        , branches = Some [ "master" ]
+        , tags = Some [ "*" ]
         }
       }
     , jobs = toMap
