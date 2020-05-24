@@ -1,17 +1,11 @@
 let GithubActions =
-      ../package.dhall sha256:70379601fc41305d287544ff1b368e44e3ac0d8b601f0e15afa36b651a8ffe07
+      ../package.dhall sha256:40602cb9f4e3d1964e87bc88385c7946d9796b0fb1358249fce439ac9f30c726
 
 let setup =
       [ GithubActions.steps.checkout
       , GithubActions.steps.olafurpg/java-setup { java-version = "11" }
       , GithubActions.steps.olafurpg/gpg-setup
       , GithubActions.steps.olafurpg/sbt-ci-release
-          { ref = "\${{ github.ref }}"
-          , pgpPassphrase = "\${{ secrets.PGP_PASSPHRASE }}"
-          , pgpSecret = "\${{ secrets.PGP_SECRET }}"
-          , sonatypePassword = "\${{ secrets.SONATYPE_PASSWORD }}"
-          , sonatypeUsername = "\${{ secrets.SONATYPE_USERNAME }}"
-          }
       ]
 
 in  GithubActions.Workflow::{

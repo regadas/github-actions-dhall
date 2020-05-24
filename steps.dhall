@@ -23,5 +23,5 @@
 , olafurpg/gpg-setup =
     ./steps/olafurpg/gpg-setup.dhall sha256:d58e53f881fcd63053ac902fe97e842b56c00576adf93007c2a8a6370bb843f0
 , olafurpg/sbt-ci-release =
-    ./steps/olafurpg/sbt-ci-release.dhall sha256:e1a6e31166b6ced82265a1880991b3b5de55f8c325bc03da0e547f2abc7ef72b
+    ./steps/olafurpg/sbt-ci-release.dhall sha256:28b676449303888dbb028ad960e587004e761c0afa283cf4d5bce0d4eafb2288
 }

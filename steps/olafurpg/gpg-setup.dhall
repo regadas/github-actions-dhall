@@ -1,6 +1,6 @@
 let Step = ../../schemas/Step.dhall
 
-in Step::{
+in  Step::{
     , id = None Text
     , name = None Text
     , uses = Some "olafurpg/setup-gpg@v2"
