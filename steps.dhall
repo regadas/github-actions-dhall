@@ -18,6 +18,10 @@
     ./steps/actions/java-setup.dhall sha256:d2f618e66d0e2f841ef043fe16501cef5ffdf412fd7d4bd74f3f922cab745568
 , actions/helloWorld =
     ./steps/actions/helloWorld.dhall sha256:119e5f24031dd30ebf94b9a8c7cfda7ac1da271effff60dd9d7542f932ed5145
+, cachix/cachix =
+    ./steps/cachix/cachix.dhall sha256:314d2cb8ee42d0d1d39b2da55c9d01d1b9913566c1e929c28c38aa88ea6ffe12
+, cachix/install-nix =
+    ./steps/cachix/install-nix.dhall sha256:13781516a660a5ab7862b0dfc63913dd2b9461f038717a05f5ff7ee12ea171a9
 , olafurpg/java-setup =
     ./steps/olafurpg/java-setup.dhall sha256:8ccb6ba97ce3b68401bdff04ed9dde29375d456e2f3fdf293832e6fa9c0f59a1
 , olafurpg/gpg-setup =
