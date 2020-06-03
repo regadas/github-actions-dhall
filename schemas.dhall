@@ -1,5 +1,5 @@
 { Job =
-    ./schemas/Job.dhall sha256:58491974708340ac7add026963e2a112279b9f059bd1a594f8be7a3f7e6eb9af
+    ./schemas/Job.dhall sha256:0c63b4d2513a0d5f459217f79e418250861da64f516896359d88291baf0055c3
 , On =
     ./schemas/On.dhall sha256:657ed27d96577db137417aa324f323c87ca0eb7b2aae18da166b2828a3ffeec3
 , RunsOn =
