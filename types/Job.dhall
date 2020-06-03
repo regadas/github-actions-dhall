@@ -8,7 +8,7 @@ let Step = ./Step.dhall
 
 let Strategy = ./Strategy.dhall
 
-in  { name : Text
+in  { name : Optional Text
     , needs : Optional (List Text)
     , runs-on : RunsOn
     , strategy : Optional Strategy
