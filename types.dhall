@@ -13,7 +13,7 @@
 , Env =
     ./types/Env.dhall sha256:e73a2ec07449acffe1a4ba9cd261b845a8beb8f81fbc1415575639e99da668e6
 , Workflow =
-    ./types/Workflow.dhall sha256:6726e05cc6021de828970936b1b45718e1e9a2c310fda7fac5c6379b2120e9b2
+    ./types/Workflow.dhall sha256:7d805a6512723883eebc05f76a55af7fd2032e9c1b9cc7d0090eb7006909363b
 , Push =
     ./types/events/Push.dhall sha256:8fbd99245e6d2a3ec558ebde1596c37e0666c163e02a3577f8f7df1cfee0e100
 , PullRequest =

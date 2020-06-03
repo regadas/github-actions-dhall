@@ -10,7 +10,7 @@ let Defaults = ./Defaults.dhall
 
 let Job = ./Job.dhall
 
-in  { name : Text
+in  { name : Optional Text
     , on : On
     , env : Optional Env
     , defaults : Optional Defaults
