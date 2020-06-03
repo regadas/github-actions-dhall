@@ -9,7 +9,7 @@
 , Strategy =
     ./schemas/Strategy.dhall sha256:7161390c7ecb252191f9f1aba39ad2e1ae24773f4a2c1b3a1224e95bc5dd1db9
 , Workflow =
-    ./schemas/Workflow.dhall sha256:50093590aa4a25fdb0142c7597222fa50aec3aaaa6d9936b358ea285ceb37fbd
+    ./schemas/Workflow.dhall sha256:3934b649ca5f8eae677eef2163eafc742a4012f1a6e9553d77f2296275c654f1
 , Push =
     ./schemas/events/Push.dhall sha256:59aa648eda0a6e47e8b03074d1ec35e910f0b177bf1104fb545f5225f543dd95
 , PullRequest =
