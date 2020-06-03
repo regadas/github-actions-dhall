@@ -1,5 +1,7 @@
 { run =
     ./steps/run.dhall sha256:2743f316bf0fa45fc054aea9c842bf7dd81eacbf39b358f6a1a0c9731a879f83
+, runAs =
+    ./steps/runAs.dhall sha256:9ea3da391dd2d6ad534ab36b31b8e983483d4ac414932bd524511d2512d5da43
 , echo =
     ./steps/echo.dhall sha256:87329eab26c14eac330e20cf5830070cf952a0e7eab4c0d8634d417044213ca3
 , checkout =
@@ -22,6 +24,8 @@
     ./steps/cachix/cachix.dhall sha256:314d2cb8ee42d0d1d39b2da55c9d01d1b9913566c1e929c28c38aa88ea6ffe12
 , cachix/install-nix =
     ./steps/cachix/install-nix.dhall sha256:13781516a660a5ab7862b0dfc63913dd2b9461f038717a05f5ff7ee12ea171a9
+, JamesIves/ghpages-deploy =
+    ./steps/JamesIves/ghpages-deploy.dhall sha256:b519ff92bbb39e84000853453b9abf7323a9424e709cb9336c9719b7e99cbcb5
 , olafurpg/java-setup =
     ./steps/olafurpg/java-setup.dhall sha256:8ccb6ba97ce3b68401bdff04ed9dde29375d456e2f3fdf293832e6fa9c0f59a1
 , olafurpg/gpg-setup =
