@@ -1,1 +1,1 @@
-< AccessToken | GithubToken | Ssh >
+< accessToken | githubToken | ssh >

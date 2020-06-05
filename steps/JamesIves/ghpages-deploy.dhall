@@ -5,11 +5,11 @@ let AuthSchema = ./AuthSchema.dhall
 let auth =
       λ(authSchema : AuthSchema) →
         merge
-          { AccessToken = toMap
+          { accessToken = toMap
               { ACCESS_TOKEN = "\${{ secrets.ACCESS_TOKEN }}" }
-          , GithubToken = toMap
+          , githubToken = toMap
               { GITHUB_TOKEN = "\${{ secrets.GITHUB_TOKEN }}" }
-          , Ssh = toMap { SSH = "true" }
+          , ssh = toMap { SSH = "true" }
           }
           authSchema
 
