@@ -1,7 +1,5 @@
 { run =
     ./steps/run.dhall sha256:2743f316bf0fa45fc054aea9c842bf7dd81eacbf39b358f6a1a0c9731a879f83
-, runAs =
-    ./steps/runAs.dhall sha256:9ea3da391dd2d6ad534ab36b31b8e983483d4ac414932bd524511d2512d5da43
 , echo =
     ./steps/echo.dhall sha256:87329eab26c14eac330e20cf5830070cf952a0e7eab4c0d8634d417044213ca3
 , checkout =
