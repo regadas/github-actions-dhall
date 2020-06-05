@@ -14,7 +14,11 @@ let auth =
           authSchema
 
 in  λ ( args
-      : { authSchema : AuthSchema, branch : Text, folder : Text, opts : {} }
+      : { authSchema : AuthSchema
+        , branch : Text
+        , folder : Text
+        , opts : { mapKey : Text, mapValue : Text }
+        }
       ) →
       Step::{
       , id = None Text
