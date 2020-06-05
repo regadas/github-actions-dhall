@@ -17,7 +17,7 @@ in  λ ( args
       : { authSchema : AuthSchema
         , branch : Text
         , folder : Text
-        , opts : { mapKey : Text, mapValue : Text }
+        , opts : List { mapKey : Text, mapValue : Text }
         }
       ) →
       Step::{
@@ -26,7 +26,8 @@ in  λ ( args
       , uses = Some "JamesIves/github-pages-deploy-action@3.5.3"
       , run = None Text
       , with = Some
-          (   toMap ({ BRANCH = args.branch, FOLDER = args.folder } ∧ args.opts)
+          (   toMap { BRANCH = args.branch, FOLDER = args.folder }
             # auth args.authSchema
+            # args.opts
           )
       }

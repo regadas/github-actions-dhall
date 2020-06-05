@@ -23,7 +23,7 @@
 , cachix/install-nix =
     ./steps/cachix/install-nix.dhall sha256:13781516a660a5ab7862b0dfc63913dd2b9461f038717a05f5ff7ee12ea171a9
 , JamesIves/ghpages-deploy =
-    ./steps/JamesIves/ghpages-deploy.dhall sha256:4519a938660ea6e65d68f51797e41f2fee056b553b8e064325703ac541e7e5aa
+    ./steps/JamesIves/ghpages-deploy.dhall sha256:4deec89bd8c838fe29170b3e22dccb559a215a171589ea9c9e2f27c76e47b91d
 , olafurpg/java-setup =
     ./steps/olafurpg/java-setup.dhall sha256:8ccb6ba97ce3b68401bdff04ed9dde29375d456e2f3fdf293832e6fa9c0f59a1
 , olafurpg/gpg-setup =
