@@ -13,14 +13,16 @@ let auth =
           }
           authSchema
 
-in  λ(args : { authSchema : AuthSchema, branch : Text, folder : Text }) →
+in  λ ( args
+      : { authSchema : AuthSchema, branch : Text, folder : Text, opts : {} }
+      ) →
       Step::{
       , id = None Text
       , name = Some "Deploy 🚀"
       , uses = Some "JamesIves/github-pages-deploy-action@3.5.3"
       , run = None Text
       , with = Some
-          (   toMap { BRANCH = args.branch, FOLDER = args.folder }
+          (   toMap ({ BRANCH = args.branch, FOLDER = args.folder } ∧ args.opts)
             # auth args.authSchema
           )
       }
