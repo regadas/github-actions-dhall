@@ -1,6 +1,6 @@
 let Step = ../../schemas/Step.dhall
 
-let AuthSchema = < AccessToken | GithubToken | Ssh >
+let AuthSchema = ./AuthSchema.dhall
 
 let auth =
       λ(authSchema : AuthSchema) →
