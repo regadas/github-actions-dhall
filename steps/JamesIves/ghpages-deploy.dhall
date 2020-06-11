@@ -2,6 +2,8 @@ let Step = ../../schemas/Step.dhall
 
 let AuthSchema = ./AuthSchema.dhall
 
+let Options = ./Options.dhall
+
 let auth =
       λ(authSchema : AuthSchema) →
         merge
@@ -13,11 +15,17 @@ let auth =
           }
           authSchema
 
+let R = List { mapKey : Text, mapValue : Text }
+
+let opts =
+      λ(options : Options) →
+        merge { None = [] : R, Some = λ(xs : R) → xs } options
+
 in  λ ( args
       : { authSchema : AuthSchema
         , branch : Text
         , folder : Text
-        , opts : List { mapKey : Text, mapValue : Text }
+        , opts : Options
         }
       ) →
       Step::{
@@ -28,6 +36,6 @@ in  λ ( args
       , with = Some
           (   toMap { BRANCH = args.branch, FOLDER = args.folder }
             # auth args.authSchema
-            # args.opts
+            # opts args.opts
           )
       }
