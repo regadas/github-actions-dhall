@@ -1,5 +1,5 @@
 { Job =
-    ./types/Job.dhall sha256:741cb86cb7dd8234f600357af0b512b196ea4f59ee948c6ff3fa997f2dd70486
+    ./types/Job.dhall sha256:5755b0a5178894fb01276bc7704b82d6b59b70a3f839236d0c78dc78e3520d33
 , Defaults =
     ./types/Defaults.dhall sha256:a2963761aaa06bae9abd5575667afbba6539d8ce694a4a82900bf4f9df2e7932
 , Strategy =
@@ -13,7 +13,7 @@
 , Env =
     ./types/Env.dhall sha256:e73a2ec07449acffe1a4ba9cd261b845a8beb8f81fbc1415575639e99da668e6
 , Workflow =
-    ./types/Workflow.dhall sha256:6726e05cc6021de828970936b1b45718e1e9a2c310fda7fac5c6379b2120e9b2
+    ./types/Workflow.dhall sha256:e000f0a878b02ea4f1fd01f891b790bbf5e4beb625daa6f58072dc3aefa88358
 , Push =
     ./types/events/Push.dhall sha256:8fbd99245e6d2a3ec558ebde1596c37e0666c163e02a3577f8f7df1cfee0e100
 , PullRequest =

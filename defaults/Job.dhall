@@ -4,7 +4,8 @@ let Env = ../types/Env.dhall
 
 let Strategy = ../types/Strategy.dhall
 
-in  { needs = None (List Text)
+in  { name = None Text
+    , needs = None (List Text)
     , strategy = None Strategy
     , outputs = None (List { mapKey : Text, mapValue : Text })
     , env = None Env
