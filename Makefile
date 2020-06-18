@@ -5,7 +5,9 @@ EXAMPLES=$(SRC:examples/%.dhall=examples/out/%.yaml)
 all: examples gh-worflow-update
 
 examples/out/%.yaml: examples/%.dhall
-	dhall-to-yaml --file $< > $@
+	mkdir -p .cache
+	sed 's#https://raw.*package.dhall #./package.dhall #' $< | \
+	  env XDG_CACHE_HOME=.cache dhall-to-yaml --output $@
 
 examples: $(EXAMPLES)
 
@@ -14,4 +16,4 @@ gh-worflow-update:
 
 
 clean: $(EXAMPLES)
-	rm $^
+	rm -Rf $^ .cache
