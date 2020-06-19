@@ -22,6 +22,8 @@
     ./steps/cachix/cachix.dhall sha256:314d2cb8ee42d0d1d39b2da55c9d01d1b9913566c1e929c28c38aa88ea6ffe12
 , cachix/install-nix =
     ./steps/cachix/install-nix.dhall sha256:13781516a660a5ab7862b0dfc63913dd2b9461f038717a05f5ff7ee12ea171a9
+, elastic/elasticsearch =
+    ./steps/elastic/elasticsearch.dhall sha256:79ebe54702d4ca19b45c0db9d73899cf93c60886cd3571fcc4320cd8d49f4dff
 , JamesIves/ghpages-deploy =
     ./steps/JamesIves/ghpages-deploy.dhall sha256:d616c73848cfd3608f3d89e77b2c463b671dbfcfadc5be18a58fbd3397a16283
 , olafurpg/java-setup =
