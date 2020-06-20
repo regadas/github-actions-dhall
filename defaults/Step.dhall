@@ -13,7 +13,4 @@ in  { env = None Env
     , strategy = None Strategy
     , if = None Text
     , working-directory = None Text
-    , id = None Text
-    , uses = None Text
-    , run = None Text
     }

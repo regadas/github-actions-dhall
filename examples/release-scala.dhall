@@ -1,5 +1,5 @@
 let GithubActions =
-      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:8efe6772e27f99ed3a9201b4e45c68eeaaf82c349e70d36fbe89185a324f6519
+      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:5528efe485606ac6a314efd31414fbe364665f6393fda46059fea5e223d6511b
 
 let setup =
       [ GithubActions.steps.checkout
