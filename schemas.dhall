@@ -1,17 +1,19 @@
 { Job =
-    ./schemas/Job.dhall sha256:0c63b4d2513a0d5f459217f79e418250861da64f516896359d88291baf0055c3
+    ./schemas/Job.dhall sha256:8d99db4a2cd690899dc6a7b262413a47b3907a6366dd9948abc93d62c9ee214d
 , On =
-    ./schemas/On.dhall sha256:657ed27d96577db137417aa324f323c87ca0eb7b2aae18da166b2828a3ffeec3
+    ./schemas/On.dhall sha256:87d774d25cedcfae36d65222ba25bcb20d7553a639db14d6031bd6f86d4fb7b0
 , RunsOn =
-    ./schemas/RunsOn.dhall sha256:09f17b8ee0bf38d1fd317ace35121a67d1bd40b2af0ec2f5197d4c12bf58dec9
+    ./schemas/RunsOn.dhall sha256:87db6317637350e2116125d4396b78f28d6f962bfbe5e7f4ba8f7b9511d30b89
 , Step =
-    ./schemas/Step.dhall sha256:123fe64d99465f2ae22b72f5d70e8dd82fe050c94735fb5c3b639bda90d82ac5
+    ./schemas/Step.dhall sha256:16dad11fe1fd6a7593a26ecc40ce3fdb6e6babacb4f6eb06aeb0b83ed2e15821
 , Strategy =
     ./schemas/Strategy.dhall sha256:7161390c7ecb252191f9f1aba39ad2e1ae24773f4a2c1b3a1224e95bc5dd1db9
 , Workflow =
-    ./schemas/Workflow.dhall sha256:3934b649ca5f8eae677eef2163eafc742a4012f1a6e9553d77f2296275c654f1
+    ./schemas/Workflow.dhall sha256:b606792ab27c014e3889527dcf24bf2d72386ffc57f01259050209116ecb2a0a
 , Push =
     ./schemas/events/Push.dhall sha256:59aa648eda0a6e47e8b03074d1ec35e910f0b177bf1104fb545f5225f543dd95
 , PullRequest =
     ./schemas/events/PullRequest.dhall sha256:59aa648eda0a6e47e8b03074d1ec35e910f0b177bf1104fb545f5225f543dd95
+, Delete =
+    ./schemas/events/Delete.dhall sha256:81a1bf11fb9dc588941bd83400ed571298585a700a53e858456806f7ea3b8ce2
 }
