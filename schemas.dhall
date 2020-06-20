@@ -5,7 +5,7 @@
 , RunsOn =
     ./schemas/RunsOn.dhall sha256:09f17b8ee0bf38d1fd317ace35121a67d1bd40b2af0ec2f5197d4c12bf58dec9
 , Step =
-    ./schemas/Step.dhall sha256:123fe64d99465f2ae22b72f5d70e8dd82fe050c94735fb5c3b639bda90d82ac5
+    ./schemas/Step.dhall sha256:2eee0a7d52c131ea1452aeb63f5653def99edc70f27c37bb95e9c254569699c1
 , Strategy =
     ./schemas/Strategy.dhall sha256:7161390c7ecb252191f9f1aba39ad2e1ae24773f4a2c1b3a1224e95bc5dd1db9
 , Workflow =
