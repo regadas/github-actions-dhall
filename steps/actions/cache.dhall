@@ -6,7 +6,7 @@ in    λ(args : { path : Text, key : Text, hashFile : Text })
       , name = Some "${args.path} cache"
       , uses = Some "actions/cache@v1"
       , run = None Text
-      , with = Some
+      , `with` = Some
           ( toMap
               { path = args.path
               , key =

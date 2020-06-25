@@ -14,6 +14,6 @@ in      \(args : { stack-version : Text, nodes : Optional Natural })
             , name = Some "Runs elasticsearch version ${args.stack-version}"
             , uses = Some "elastic/elastic-github-actions/elasticsearch@master"
             , run = None Text
-            , with = Some
+            , `with` = Some
                 (toMap { stack-version = args.stack-version } # nodes-vars)
             }

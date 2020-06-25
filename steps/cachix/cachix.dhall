@@ -6,7 +6,7 @@ in  λ(args : { cache-name : Text }) →
       , name = None Text
       , uses = Some "cachix/cachix-action@v6"
       , run = None Text
-      , with = Some
+      , `with` = Some
           ( toMap
               { name = args.cache-name
               , signingKey = "\${{ secrets.CACHIX_SIGNING_KEY }}"

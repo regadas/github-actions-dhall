@@ -5,5 +5,5 @@ in  Step::{
     , name = None Text
     , uses = Some "olafurpg/setup-gpg@v2"
     , run = None Text
-    , with = None (List { mapKey : Text, mapValue : Text })
+    , `with` = None (List { mapKey : Text, mapValue : Text })
     }

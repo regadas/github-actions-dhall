@@ -9,8 +9,8 @@ in  { env = None Env
     , run = None Text
     , uses = None Text
     , continue-on-error = None Bool
-    , with = None (List { mapKey : Text, mapValue : Text })
+    , `with` = None (List { mapKey : Text, mapValue : Text })
     , strategy = None Strategy
-    , if = None Text
+    , `if` = None Text
     , working-directory = None Text
     }
