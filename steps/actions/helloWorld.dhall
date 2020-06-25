@@ -1,7 +1,7 @@
 let Step = ../../schemas/Step.dhall
 
-in    λ(args : { name : Text, who-to-greet : Text })
-    → Step::{
+in  λ(args : { name : Text, who-to-greet : Text }) →
+      Step::{
       , id = None Text
       , name = Some args.name
       , run = None Text
