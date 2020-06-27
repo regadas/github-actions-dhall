@@ -12,9 +12,9 @@ in  { id : Optional Text
     , run : Optional Text
     , uses : Optional Text
     , shell : Optional Text
-    , with : Optional (List { mapKey : Text, mapValue : Text })
+    , `with` : Optional (List { mapKey : Text, mapValue : Text })
     , continue-on-error : Optional Bool
     , strategy : Optional Strategy
-    , if : Optional Text
+    , `if` : Optional Text
     , working-directory : Optional Text
     }

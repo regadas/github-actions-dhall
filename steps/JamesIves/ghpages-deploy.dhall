@@ -33,7 +33,7 @@ in  λ ( args
       , name = Some "Deploy 🚀"
       , uses = Some "JamesIves/github-pages-deploy-action@3.5.3"
       , run = None Text
-      , with = Some
+      , `with` = Some
           (   toMap { BRANCH = args.branch, FOLDER = args.folder }
             # auth args.authSchema
             # opts args.opts

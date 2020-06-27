@@ -1,12 +1,12 @@
 let Step = ../schemas/Step.dhall
 
-in    λ(args : { java-version : Text })
-    → Step::{
+in  λ(args : { java-version : Text }) →
+      Step::{
       , id = None Text
       , name = Some "java ${args.java-version} setup"
       , uses = Some "actions/setup-java@v1"
       , run = None Text
-      , with = Some
+      , `with` = Some
           ( toMap
               { java-version = args.java-version
               , java-package = "jdk"
