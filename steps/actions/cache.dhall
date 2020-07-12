@@ -4,7 +4,7 @@ in  λ(args : { path : Text, key : Text, hashFile : Text }) →
       Step::{
       , id = None Text
       , name = Some "${args.path} cache"
-      , uses = Some "actions/cache@v1"
+      , uses = Some "actions/cache@v2"
       , run = None Text
       , `with` = Some
           ( toMap
