@@ -5,7 +5,7 @@
 , checkout =
     ./steps/checkout.dhall sha256:d966e1771371e9a7aaef7f89cdcaaedd1d439679b7130ca276ecd3cd64125cce
 , cache =
-    ./steps/cache.dhall sha256:5db7e7c9393fb2856c7a1fd1bde71669893655b91dc092b961acc6570fb4e6ab
+    ./steps/cache.dhall sha256:01ef79105f4bed93f502c5a28bd0c28dfeec7e12ad6052dcd87001395402b506
 , java-setup =
     ./steps/java-setup.dhall sha256:d2f618e66d0e2f841ef043fe16501cef5ffdf412fd7d4bd74f3f922cab745568
 , helloWorld =
@@ -13,7 +13,7 @@
 , actions/checkout =
     ./steps/actions/checkout.dhall sha256:d966e1771371e9a7aaef7f89cdcaaedd1d439679b7130ca276ecd3cd64125cce
 , actions/cache =
-    ./steps/actions/cache.dhall sha256:5db7e7c9393fb2856c7a1fd1bde71669893655b91dc092b961acc6570fb4e6ab
+    ./steps/actions/cache.dhall sha256:01ef79105f4bed93f502c5a28bd0c28dfeec7e12ad6052dcd87001395402b506
 , actions/java-setup =
     ./steps/actions/java-setup.dhall sha256:d2f618e66d0e2f841ef043fe16501cef5ffdf412fd7d4bd74f3f922cab745568
 , actions/helloWorld =
