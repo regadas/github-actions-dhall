@@ -5,7 +5,7 @@
 , actions/checkout =
     ./steps/actions/checkout.dhall sha256:d966e1771371e9a7aaef7f89cdcaaedd1d439679b7130ca276ecd3cd64125cce
 , actions/cache =
-    ./steps/actions/cache.dhall sha256:01ef79105f4bed93f502c5a28bd0c28dfeec7e12ad6052dcd87001395402b506
+    ./steps/actions/cache.dhall sha256:815100aa7bf7fa6b15d5784ae6191d7ec79b82471264e0a87a10ab718bb9a5f3
 , actions/java-setup =
     ./steps/actions/java-setup.dhall sha256:d2f618e66d0e2f841ef043fe16501cef5ffdf412fd7d4bd74f3f922cab745568
 , actions/helloWorld =
