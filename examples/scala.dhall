@@ -5,7 +5,7 @@ let matrix =
       toMap { java = [ "8.0.232", "11.0.5" ], scala = [ "2.11.12", "2.12.11" ] }
 
 let setup =
-      [ GithubActions.steps.checkout
+      [ GithubActions.steps.actions/checkout
       , GithubActions.steps.run
           { run =
               ''
@@ -15,9 +15,9 @@ let setup =
                 project/Dependencies.scala > gha.cache.tmp
               ''
           }
-      , GithubActions.steps.cache
+      , GithubActions.steps.actions/cache
           { path = "~/.sbt", key = "sbt", hashFile = "gha.cache.tmp" }
-      , GithubActions.steps.cache
+      , GithubActions.steps.actions/cache
           { path = "~/.cache/coursier"
           , key = "coursier"
           , hashFile = "gha.cache.tmp"
@@ -36,7 +36,7 @@ in  GithubActions.Workflow::{
           , runs-on = GithubActions.types.RunsOn.ubuntu-latest
           , steps =
                 setup
-              # [ GithubActions.steps.java-setup { java-version = "11" }
+              # [ GithubActions.steps.actions/java-setup { java-version = "11" }
                 , GithubActions.steps.run
                     { run = "sbt scalafmtCheckAll scalafmtSbtCheck" }
                 ]
@@ -48,7 +48,7 @@ in  GithubActions.Workflow::{
           , runs-on = GithubActions.types.RunsOn.ubuntu-latest
           , steps =
                 setup
-              # [ GithubActions.steps.java-setup
+              # [ GithubActions.steps.actions/java-setup
                     { java-version = "\${{ matrix.scala}}" }
                 , GithubActions.steps.run
                     { run = "sbt \"++\${{ matrix.scala}} test\"" }
