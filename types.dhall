@@ -20,4 +20,6 @@
     ./types/events/PullRequest.dhall sha256:8fbd99245e6d2a3ec558ebde1596c37e0666c163e02a3577f8f7df1cfee0e100
 , Delete =
     ./types/events/Delete.dhall sha256:0912602a19e01dcff30f351958d2d9b69519c9be61b57b1b32a2a569bf8bf5f9
+, actions/HaskellSetup =
+    ./types/actions/HaskellSetup.dhall sha256:d2772ae99c9bd50de89a9a964f132627bb264aea01670263e9c04d241bab79de
 }
