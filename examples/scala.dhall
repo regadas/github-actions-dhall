@@ -34,7 +34,7 @@ in  GithubActions.Workflow::{
           , runs-on = GithubActions.types.RunsOn.ubuntu-latest
           , steps =
                 setup
-              # [ GithubActions.steps.actions/java-setup { java-version = "11" }
+              # [ GithubActions.steps.actions/setup-java { java-version = "11" }
                 , GithubActions.steps.run
                     { run = "sbt scalafmtCheckAll scalafmtSbtCheck" }
                 ]
@@ -46,7 +46,7 @@ in  GithubActions.Workflow::{
           , runs-on = GithubActions.types.RunsOn.ubuntu-latest
           , steps =
                 setup
-              # [ GithubActions.steps.actions/java-setup
+              # [ GithubActions.steps.actions/setup-java
                     { java-version = "\${{ matrix.scala}}" }
                 , GithubActions.steps.run
                     { run = "sbt \"++\${{ matrix.scala}} test\"" }
