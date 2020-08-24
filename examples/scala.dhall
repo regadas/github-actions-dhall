@@ -1,26 +1,24 @@
 let GithubActions =
-      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:c0a9ee656aa2eb0b46828a22a48e7a8c63c9c9689153a09d34f8fac7cd8d2736
+      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:71caf8ceb1cf2a79053ed53991ab75dd8ee7905c33fe81a85f0226c6ca59900d
 
 let matrix =
       toMap { java = [ "8.0.232", "11.0.5" ], scala = [ "2.11.12", "2.12.11" ] }
 
 let setup =
       [ GithubActions.steps.actions/checkout
-      , GithubActions.steps.run
-          { run =
-              ''
-              shasum build.sbt \
-                project/plugins.sbt \
-                project/build.properties \
-                project/Dependencies.scala > gha.cache.tmp
-              ''
-          }
       , GithubActions.steps.actions/cache
-          { path = "~/.sbt", key = "sbt", hashFile = "gha.cache.tmp" }
-      , GithubActions.steps.actions/cache
-          { path = "~/.cache/coursier"
-          , key = "coursier"
-          , hashFile = "gha.cache.tmp"
+          { path =
+              ''
+              ~/.sbt
+              "~/.cache/coursier"
+              ''
+          , key = "sbt"
+          , hashFiles =
+            [ "build.sbt"
+            , "project/plugins.sbt"
+            , "project/build.properties"
+            , "project/Dependencies.scala"
+            ]
           }
       ]
 

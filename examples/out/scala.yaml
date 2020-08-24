@@ -6,23 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: "actions/checkout@v2.1.0"
-      - run: |
-          shasum build.sbt \
-            project/plugins.sbt \
-            project/build.properties \
-            project/Dependencies.scala > gha.cache.tmp
-      - name: "~/.sbt cache"
+      - name: "~/.sbt\n\"~/.cache/coursier\"\n cache"
         uses: "actions/cache@v2"
         with:
-          key: "${{ runner.os }}-sbt-${{ hashFiles('gha.cache.tmp') }}"
-          path: "~/.sbt"
+          key: "${{ runner.os }}-sbt-${{ hashFiles(''build.sbt','project/plugins.sbt','project/build.properties','project/Dependencies.scala'') }}"
+          path: |
+            ~/.sbt
+            "~/.cache/coursier"
           restore-keys: sbt
-      - name: "~/.cache/coursier cache"
-        uses: "actions/cache@v2"
-        with:
-          key: "${{ runner.os }}-coursier-${{ hashFiles('gha.cache.tmp') }}"
-          path: "~/.cache/coursier"
-          restore-keys: coursier
       - name: "java ${{ matrix.scala}} setup"
         uses: "actions/setup-java@v1"
         with:
@@ -43,23 +34,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: "actions/checkout@v2.1.0"
-      - run: |
-          shasum build.sbt \
-            project/plugins.sbt \
-            project/build.properties \
-            project/Dependencies.scala > gha.cache.tmp
-      - name: "~/.sbt cache"
+      - name: "~/.sbt\n\"~/.cache/coursier\"\n cache"
         uses: "actions/cache@v2"
         with:
-          key: "${{ runner.os }}-sbt-${{ hashFiles('gha.cache.tmp') }}"
-          path: "~/.sbt"
+          key: "${{ runner.os }}-sbt-${{ hashFiles(''build.sbt','project/plugins.sbt','project/build.properties','project/Dependencies.scala'') }}"
+          path: |
+            ~/.sbt
+            "~/.cache/coursier"
           restore-keys: sbt
-      - name: "~/.cache/coursier cache"
-        uses: "actions/cache@v2"
-        with:
-          key: "${{ runner.os }}-coursier-${{ hashFiles('gha.cache.tmp') }}"
-          path: "~/.cache/coursier"
-          restore-keys: coursier
       - name: java 11 setup
         uses: "actions/setup-java@v1"
         with:
