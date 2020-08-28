@@ -3,8 +3,8 @@ let GithubActions =
 
 let setup =
       [ GithubActions.steps.actions/checkout
-      , GithubActions.steps.olafurpg/java-setup { java-version = "11" }
-      , GithubActions.steps.olafurpg/gpg-setup
+      , GithubActions.steps.olafurpg/setup-java { java-version = "11" }
+      , GithubActions.steps.olafurpg/setup-gpg
       , GithubActions.steps.olafurpg/sbt-ci-release
       ]
 
