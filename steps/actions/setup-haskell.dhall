@@ -19,7 +19,7 @@ let haskell-setup
     = λ(args : HaskellSetup.Type) →
         Step::{
         , uses = Some "actions/setup-haskell@v1"
-        , with = Some
+        , `with` = Some
             ( List/concatMap
                 (Map.Entry Text (Optional Text))
                 (Map.Entry Text Text)
