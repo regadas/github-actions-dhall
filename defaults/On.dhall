@@ -4,4 +4,10 @@ let PullRequest = ../types/events/PullRequest.dhall
 
 let Delete = ../types/events/Delete.dhall
 
-in  { push = None Push, pull_request = None PullRequest, delete = None Delete }
+let Schedule = ../types/events/Schedule.dhall
+
+in  { push = None Push
+    , pull_request = None PullRequest
+    , delete = None Delete
+    , schedule = None (List Schedule)
+    }
