@@ -3,15 +3,15 @@
 , echo =
     ./steps/echo.dhall sha256:87329eab26c14eac330e20cf5830070cf952a0e7eab4c0d8634d417044213ca3
 , actions/checkout =
-    ./steps/actions/checkout.dhall sha256:d966e1771371e9a7aaef7f89cdcaaedd1d439679b7130ca276ecd3cd64125cce
+    ./steps/actions/checkout.dhall sha256:abec1b4d04950070c638b35d9d1be07b94ad6c10fe5b8a044404b2645d55f224
 , actions/cache =
-    ./steps/actions/cache.dhall sha256:815100aa7bf7fa6b15d5784ae6191d7ec79b82471264e0a87a10ab718bb9a5f3
+    ./steps/actions/cache.dhall sha256:c9c2d75be011bd55a2915931cd808b433c62a3264490dc5047b2c2240e3cc2e4
 , actions/helloWorld =
     ./steps/actions/helloWorld.dhall sha256:119e5f24031dd30ebf94b9a8c7cfda7ac1da271effff60dd9d7542f932ed5145
 , actions/setup-haskell =
     ./steps/actions/setup-haskell.dhall sha256:d451f45c814a935e8f030cf1cd1a4b7beea6836ff37d64030a708c7bc781fb56
 , actions/setup-java =
-    ./steps/actions/setup-java.dhall sha256:d2f618e66d0e2f841ef043fe16501cef5ffdf412fd7d4bd74f3f922cab745568
+    ./steps/actions/setup-java.dhall sha256:615313f503d88f81f16f4715a45afccfc6c718a46e373ae74f16d4a8895b6592
 , cachix/cachix =
     ./steps/cachix/cachix.dhall sha256:314d2cb8ee42d0d1d39b2da55c9d01d1b9913566c1e929c28c38aa88ea6ffe12
 , cachix/install-nix =
