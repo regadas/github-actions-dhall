@@ -1,5 +1,5 @@
 let GithubActions =
-      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:424f61db63a2428c3c94fa6f07ac96e4fa630e9d53004591b8a0b7e93aab3aea
+      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:4c9474076eb57c92ea99ce3a4fdd9acc9bee1bdeedbc6f2b6840235128caf5b3
 
 let setup =
       [ GithubActions.steps.actions/checkout
@@ -19,7 +19,6 @@ in  GithubActions.Workflow::{
     , jobs = toMap
         { build = GithubActions.Job::{
           , name = Some "Publish"
-          , needs = None (List Text)
           , runs-on = GithubActions.types.RunsOn.`ubuntu-18.04`
           , steps = setup
           }
