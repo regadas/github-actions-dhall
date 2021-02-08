@@ -3,9 +3,9 @@
 , echo =
     ./steps/echo.dhall sha256:87329eab26c14eac330e20cf5830070cf952a0e7eab4c0d8634d417044213ca3
 , actions/checkout =
-    ./steps/actions/checkout.dhall sha256:abec1b4d04950070c638b35d9d1be07b94ad6c10fe5b8a044404b2645d55f224
+    ./steps/actions/checkout.dhall sha256:9774916c906aeaf93189742e3626338410c7b8e8a5c497484c42b61ac77a72b3
 , actions/cache =
-    ./steps/actions/cache.dhall sha256:c9c2d75be011bd55a2915931cd808b433c62a3264490dc5047b2c2240e3cc2e4
+    ./steps/actions/cache.dhall sha256:ae1e58726fc2d13b079aaf90bc0e02071cdb1bd7b6dc7a6dc5255c9cdbb79e60
 , actions/helloWorld =
     ./steps/actions/helloWorld.dhall sha256:119e5f24031dd30ebf94b9a8c7cfda7ac1da271effff60dd9d7542f932ed5145
 , actions/setup-haskell =
