@@ -1,5 +1,5 @@
 { Job =
-    ./types/Job.dhall sha256:0ea30f88a6b7753a3b20d83e13beba45f4198791bfc7ad7be95d202b2e7c5e7e
+    ./types/Job.dhall sha256:b81460383f018c56cae909908b7cf24a2ca32ad5b8c17f29232c79e7d2681d9d
 , Defaults =
     ./types/Defaults.dhall sha256:a2963761aaa06bae9abd5575667afbba6539d8ce694a4a82900bf4f9df2e7932
 , Strategy =
@@ -9,11 +9,11 @@
 , Step =
     ./types/Step.dhall sha256:54f06c3c6ff505780eb30547e29288a4e8b96b29913f77fd086b4652c002bdda
 , RunsOn =
-    ./types/RunsOn.dhall sha256:b8d89eaecc0615f7c7c83c38fed14d8d0b1f6393d0b4f171ac5fa08665a20a77
+    ./types/RunsOn.dhall sha256:bba6f1d239ae641dff997a307432a2bb753bf8367bb6aae27c74c8ca53a7cac8
 , Env =
     ./types/Env.dhall sha256:e73a2ec07449acffe1a4ba9cd261b845a8beb8f81fbc1415575639e99da668e6
 , Workflow =
-    ./types/Workflow.dhall sha256:4d7d7bce7cdfeafae076ec01dbf94611193e9e9bc6e20df4fbd9c70a13b80e78
+    ./types/Workflow.dhall sha256:3d3771de7f0eee94c009c4039453de4348576097f2278ca6d004c2888da35650
 , Push =
     ./types/events/Push.dhall sha256:8fbd99245e6d2a3ec558ebde1596c37e0666c163e02a3577f8f7df1cfee0e100
 , PullRequest =
