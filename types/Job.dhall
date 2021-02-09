@@ -1,3 +1,5 @@
+let Container = ./Container.dhall
+
 let Defaults = ./Defaults.dhall
 
 let Env = ./Env.dhall
@@ -21,4 +23,5 @@ in  { name : Optional Text
     , timeout-minutes : Optional Natural
     , `if` : Optional Text
     , services : Optional (List { mapKey : Text, mapValue : Service })
+    , container : Optional Container
     }

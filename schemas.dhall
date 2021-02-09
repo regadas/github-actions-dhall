@@ -1,5 +1,5 @@
 { Job =
-    ./schemas/Job.dhall sha256:47306a70e505ce74cbb714f79fe13ad43c207375ec3ccdf6b040eaeae401f2f0
+    ./schemas/Job.dhall sha256:6e3c56aadb20aba4efd5cf0fb8ae61e3c521af5accaea1cd9086544d59dee78f
 , On =
     ./schemas/On.dhall sha256:0119d8206603dd7b789795b3a818cdd880a0036331703eef04241d8b2e78264d
 , RunsOn =
@@ -11,7 +11,7 @@
 , Service =
     ./schemas/Service.dhall sha256:ccf7857f3b39aba24ae09b6eb2b430c96be6b3bc697ed6f0bae464e1e7bdff82
 , Workflow =
-    ./schemas/Workflow.dhall sha256:84fc6fd307ec70c76c96f0f6c7efa6f8557e983314090eec0e1196524f7de1d1
+    ./schemas/Workflow.dhall sha256:064d5b85b7c636c95ed40d5b0ad36312278b8913156d0c43e06561c4c89e24b7
 , Push =
     ./schemas/events/Push.dhall sha256:59aa648eda0a6e47e8b03074d1ec35e910f0b177bf1104fb545f5225f543dd95
 , PullRequest =
