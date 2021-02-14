@@ -1,3 +1,5 @@
+let Container = ../types/Container.dhall
+
 let Defaults = ../types/Defaults.dhall
 
 let Env = ../types/Env.dhall
@@ -15,4 +17,5 @@ in  { name = None Text
     , timeout-minutes = None Natural
     , `if` = None Text
     , services = None (List { mapKey : Text, mapValue : Service })
+    , container = None Container
     }
