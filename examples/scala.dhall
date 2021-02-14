@@ -1,5 +1,5 @@
 let GithubActions =
-      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:4c9474076eb57c92ea99ce3a4fdd9acc9bee1bdeedbc6f2b6840235128caf5b3
+      https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall sha256:8c692d2edfd32836d6ef011c1ae9542b434ca96bebacae0d0df5ab8fdc69223b
 
 let matrix =
       toMap { java = [ "8.0.232", "11.0.5" ], scala = [ "2.11.12", "2.12.11" ] }

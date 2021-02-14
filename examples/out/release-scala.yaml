@@ -3,7 +3,7 @@ jobs:
     name: Publish
     runs-on: ubuntu-18.04
     steps:
-      - uses: "actions/checkout@v2.3.4"
+      - uses: "actions/checkout@v2"
       - name: java 11 setup
         uses: "olafurpg/setup-java@v6"
         with:
