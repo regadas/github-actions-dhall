@@ -1,8 +1,4 @@
-let Defaults = ./Defaults.dhall
-
 let Env = ./Env.dhall
-
-let RunsOn = ./RunsOn.dhall
 
 let Strategy = ./Strategy.dhall
 
