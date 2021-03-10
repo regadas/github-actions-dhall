@@ -18,7 +18,7 @@ let haskell-setup
     : HaskellSetup.Type → Step.Type
     = λ(args : HaskellSetup.Type) →
         Step::{
-        , uses = Some "actions/setup-haskell@v1"
+        , uses = Some "haskell/actions/setup@v1"
         , `with` = Some
             ( List/concatMap
                 (Map.Entry Text (Optional Text))
@@ -37,6 +37,7 @@ let haskell-setup
                     , enable-stack = stringBool args.enable-stack
                     , stack-no-global = stringBool args.stack-no-global
                     , stack-setup-ghc = stringBool args.stack-setup-ghc
+                    , disable-matcher = stringBool args.disable-matcher
                     }
                 )
             )
