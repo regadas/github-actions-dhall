@@ -8,7 +8,8 @@
     ./steps/actions/cache.dhall sha256:f4744a6760fcaa0c65acdbf6ead1afd77161352404181b1e041ba6f7d4053775
 , actions/helloWorld =
     ./steps/actions/helloWorld.dhall sha256:119e5f24031dd30ebf94b9a8c7cfda7ac1da271effff60dd9d7542f932ed5145
-, actions/setup-haskell = ./steps/actions/setup-haskell.dhall
+, actions/setup-haskell =
+    ./steps/actions/setup-haskell.dhall sha256:86d0ddc81d7af3f184c934f7196d7150b1f39eb978679e9588e9a1b22d93d6f3
 , actions/setup-java =
     ./steps/actions/setup-java.dhall sha256:615313f503d88f81f16f4715a45afccfc6c718a46e373ae74f16d4a8895b6592
 , cachix/cachix =
