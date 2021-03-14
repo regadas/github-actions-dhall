@@ -25,5 +25,5 @@
 , Schedule =
     ./types/events/Schedule.dhall sha256:eb91edc996fadffb9cac1b67a4da220eed6bf54e96f7b8accbb613462e402537
 , actions/HaskellSetup =
-    ./types/actions/HaskellSetup.dhall sha256:d2772ae99c9bd50de89a9a964f132627bb264aea01670263e9c04d241bab79de
+    ./types/actions/HaskellSetup.dhall sha256:3cfef5c383d40623d0766715715c881583623bf6e11a0ad0b9946d8eaeffa6c5
 }

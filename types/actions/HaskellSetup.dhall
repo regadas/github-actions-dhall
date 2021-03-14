@@ -4,4 +4,5 @@
 , enable-stack : Optional Bool
 , stack-no-global : Optional Bool
 , stack-setup-ghc : Optional Bool
+, disable-matcher : Optional Bool
 }
