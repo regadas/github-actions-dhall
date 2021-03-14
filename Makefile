@@ -5,7 +5,7 @@ FREEZE=$(PKGS:%.dhall=%.dhall.freezed)
 FREEZE_EXAMPLES=$(EXAMPLES:%.dhall=%.dhall.freezed)
 YAML_EXAMPLES=$(EXAMPLES:examples/%.dhall=examples/out/%.yaml)
 
-all: freeze examples gh-worflow-update
+all: freeze examples
 
 examples/out/%.yaml: examples/%.dhall
 	mkdir -p .cache
@@ -13,9 +13,6 @@ examples/out/%.yaml: examples/%.dhall
 	  env XDG_CACHE_HOME=.cache dhall-to-yaml --output $@
 
 examples: $(YAML_EXAMPLES)
-
-gh-worflow-update:
-	cp examples/out/hello-world.yaml .github/workflows/hello-world.yaml
 
 %.dhall.freezed: %.dhall
 	dhall freeze --all --inplace $<
