@@ -7,7 +7,7 @@ let List/null =
       https://prelude.dhall-lang.org/v17.1.0/List/null.dhall sha256:2338e39637e9a50d66ae1482c0ed559bbcc11e9442bfca8f8c176bbcd9c4fc80
 
 in  λ(args : { path : Text, key : Text, hashFiles : List Text }) →
-      let keyComponent = "\${{ runner.os }}-${args.key}-"
+      let keyComponent = "\${{ runner.os }}-${args.key}"
 
       let quote = λ(x : Text) → "'${x}'"
 
@@ -16,7 +16,7 @@ in  λ(args : { path : Text, key : Text, hashFiles : List Text }) →
       let hashFilesComponent =
             if    List/null Text args.hashFiles
             then  ""
-            else  "\${{ hashFiles(${hashFilesArg}) }}"
+            else  "-\${{ hashFiles(${hashFilesArg}) }}"
 
       in  Step::{
           , name = Some "${args.path} cache"
