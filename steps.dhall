@@ -5,7 +5,7 @@
 , actions/checkout =
     ./steps/actions/checkout.dhall sha256:9774916c906aeaf93189742e3626338410c7b8e8a5c497484c42b61ac77a72b3
 , actions/cache =
-    ./steps/actions/cache.dhall sha256:f4744a6760fcaa0c65acdbf6ead1afd77161352404181b1e041ba6f7d4053775
+    ./steps/actions/cache.dhall sha256:b87c5b64159fbfb06f0cc4e303791f726c81c25f0b54b42f609251b966f7171b
 , actions/helloWorld =
     ./steps/actions/helloWorld.dhall sha256:119e5f24031dd30ebf94b9a8c7cfda7ac1da271effff60dd9d7542f932ed5145
 , actions/setup-haskell =
