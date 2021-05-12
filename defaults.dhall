@@ -7,7 +7,7 @@
 , Service =
     ./defaults/Service.dhall sha256:df4da0625e279bfe7965136bc8f19c469205929070ffcfc23155c0f667b5bf5d
 , Workflow =
-    ./defaults/Workflow.dhall sha256:e559f5dd2c6cd6cf77473adb25766886f89b0bfdf00dfe6d1b7d9ff56789e374
+    ./defaults/Workflow.dhall sha256:17742a8d63e8835f60d7cee0aefab0067cc1c8b50d021a149ce7294840e19f80
 , Push =
     ./defaults/events/Push.dhall sha256:67d0026a55bf46570c9286d32ffbe8bd48a9ea28984087a1cf4ef4479b4e6d6e
 , PullRequest =

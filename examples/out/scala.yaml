@@ -14,7 +14,7 @@ jobs:
             ~/.sbt
             "~/.cache/coursier"
           restore-keys: |
-            ${{ runner.os }}-sbt-
+            ${{ runner.os }}-sbt
       - name: "java ${{ matrix.scala}} setup"
         uses: "actions/setup-java@v1.4.3"
         with:
@@ -43,7 +43,7 @@ jobs:
             ~/.sbt
             "~/.cache/coursier"
           restore-keys: |
-            ${{ runner.os }}-sbt-
+            ${{ runner.os }}-sbt
       - name: java 11 setup
         uses: "actions/setup-java@v1.4.3"
         with:

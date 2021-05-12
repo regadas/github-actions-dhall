@@ -15,13 +15,15 @@
 , Service =
     ./types/Service.dhall sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
-    ./types/Workflow.dhall sha256:ffe8ee20f43b9fdb61de0ac01cf7680a1c22d2ca359f9dc54b6fafe0bfe53b18
+    ./types/Workflow.dhall sha256:300e6ec3ccc96086b38b2b64c166771569a1e7f31f96e1b9fbe876e9e4584bf2
 , Push =
     ./types/events/Push.dhall sha256:b485c8921e0fb738a0e3714c74c897db7c0328dc7faae5ab7c0dec3ea0a71bde
 , PullRequest =
     ./types/events/PullRequest.dhall sha256:8fbd99245e6d2a3ec558ebde1596c37e0666c163e02a3577f8f7df1cfee0e100
 , Delete =
     ./types/events/Delete.dhall sha256:0912602a19e01dcff30f351958d2d9b69519c9be61b57b1b32a2a569bf8bf5f9
+, Concurrency =
+    ./types/Concurrency.dhall sha256:76a98598b0b13d496c062d301b27c82059be340aae993285c6b345ec494a4913
 , Schedule =
     ./types/events/Schedule.dhall sha256:eb91edc996fadffb9cac1b67a4da220eed6bf54e96f7b8accbb613462e402537
 , Input =
