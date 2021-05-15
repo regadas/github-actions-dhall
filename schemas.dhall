@@ -11,7 +11,7 @@
 , Service =
     ./schemas/Service.dhall sha256:ccf7857f3b39aba24ae09b6eb2b430c96be6b3bc697ed6f0bae464e1e7bdff82
 , Workflow =
-    ./schemas/Workflow.dhall sha256:1e8114eb06d598c652dade26209477543e37ff3db2084b86a871b21e5e4194ab
+    ./schemas/Workflow.dhall sha256:07bdccd484d41f6576c0a9112593aaa7d77d880c54fbea8f6f009ac3b7410166
 , Push =
     ./schemas/events/Push.dhall sha256:3c33a2e62eaf486ef35cec2344dac9c5c5ec032470b92714018803f9824db9a0
 , PullRequest =
