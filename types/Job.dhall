@@ -1,3 +1,5 @@
+let Concurrency = ./Concurrency.dhall
+
 let Container = ./Container.dhall
 
 let Defaults = ./Defaults.dhall
@@ -24,4 +26,5 @@ in  { name : Optional Text
     , `if` : Optional Text
     , services : Optional (List { mapKey : Text, mapValue : Service })
     , container : Optional Container
+    , concurrency : Optional Concurrency
     }
