@@ -8,9 +8,12 @@ let Schedule = ./events/Schedule.dhall
 
 let WorkflowDispatch = ./events/WorkflowDispatch.dhall
 
+let Release = ./events/Release.dhall
+
 in  { push : Optional Push
     , pull_request : Optional PullRequest
     , delete : Optional Delete
     , schedule : Optional (List Schedule)
     , workflow_dispatch : Optional WorkflowDispatch
+    , release : Optional Release
     }

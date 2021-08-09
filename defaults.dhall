@@ -1,7 +1,8 @@
 { Job =
     ./defaults/Job.dhall sha256:e07fa5d5a564ac6f1fd58e3d753618153b4ef77586f9e13ecbf4a99bfedf3b52
 , On =
-    ./defaults/On.dhall sha256:8bc4d7936b612b95b363e1cd2a6c217e6ad43389be4c8c56e687f8556a2c1078
+    ./defaults/On.dhall
+      sha256:6ca7c591c8b4d1a0bcf5f73d7cdf763f053f7264a989b52371429bca9ad69be6
 , Step =
     ./defaults/Step.dhall sha256:d65cc1e58f7721dcc11749bcb51b47ca94c33db04805477a48819a259ca68dfb
 , Service =
@@ -20,6 +21,9 @@
     ./defaults/Input.dhall sha256:047d951f9f951543458f7dd6ceffb5d53585fe2d59ff2a1616e8f4e130615f1a
 , WorkflowDispatch =
     ./defaults/events/WorkflowDispatch.dhall sha256:2133dc321eb5b06cd0c9ffb6cd412fa1dfd7e20c4341fecbff2b17ce29119958
+, Release =
+    ./defaults/events/Release.dhall
+      sha256:08967ae33ec89511f588be7a92274edf9c752801f38ba9c7122f8e684cfcea18
 , actions/HaskellSetup =
     ./defaults/actions/HaskellSetup.dhall sha256:e0762bf1442388cce1187fbac3e606685337f45b0e69251cfa33e513dc03c709
 }
