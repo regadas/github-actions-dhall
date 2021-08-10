@@ -5,7 +5,8 @@
 , Strategy =
     ./types/Strategy.dhall sha256:060bf27380c527f136c2c86ba1cf1f7cab6ad3dd339e655db0873cc8068b7b9d
 , On =
-    ./types/On.dhall sha256:72a208b05a31ba5421d41c800099cfea98e2bac0d84af211a2111047dabaf269
+    ./types/On.dhall
+      sha256:b676c38b8a5c9ff4b13cff3d431301ecbae46a20c5d1b8b6eb9635b13a4df0c8
 , Step =
     ./types/Step.dhall sha256:54f06c3c6ff505780eb30547e29288a4e8b96b29913f77fd086b4652c002bdda
 , RunsOn =
@@ -15,7 +16,8 @@
 , Service =
     ./types/Service.dhall sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
-    ./types/Workflow.dhall sha256:ae01ab28ef78d34582e70a868f025fa9b7da9196bbd26130ccc1ef6e9b1502c5
+    ./types/Workflow.dhall
+      sha256:518ab523207933cebf4fd1dbc6816ebf69484df5154bc9b1939118322ab0a853
 , Push =
     ./types/events/Push.dhall sha256:b485c8921e0fb738a0e3714c74c897db7c0328dc7faae5ab7c0dec3ea0a71bde
 , PullRequest =
@@ -30,6 +32,12 @@
     ./types/Input.dhall sha256:4723eaffcfb407926dbda34ad46b0e4159885063a24aa26351fd86417a150c4a
 , WorkflowDispatch =
     ./types/events/WorkflowDispatch.dhall sha256:6a5553c84dd7397eb24b3f94326d9ae9cfae04ace8fa55606319ee312d023ef8
+, Release =
+    ./types/events/Release.dhall
+      sha256:6dc17afaa0a74325dfd226bdc60d96e737978c8be500856b84d7075e869cad87
+, Release/types =
+    ./types/events/release/types.dhall
+      sha256:7a43a2198599fb074e451d67c6afcdecf65205ffe909e1e702eb2f567d5f3889
 , actions/HaskellSetup =
     ./types/actions/HaskellSetup.dhall sha256:3cfef5c383d40623d0766715715c881583623bf6e11a0ad0b9946d8eaeffa6c5
 }
