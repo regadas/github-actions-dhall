@@ -15,7 +15,7 @@ examples/out/%.yaml: examples/%.dhall
 examples: $(YAML_EXAMPLES)
 
 %.dhall.freezed: %.dhall
-	dhall freeze --all --inplace $<
+	dhall freeze --all $<
 
 freeze: $(FREEZE) $(FREEZE_EXAMPLES)
 
