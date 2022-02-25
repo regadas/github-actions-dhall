@@ -20,6 +20,16 @@ in  GithubActions.Workflow::{
     , jobs = toMap
         { build = GithubActions.Job::{
           , name = Some "Publish"
+          , environment = Some GithubActions.JobEnv::{
+            , name = "production"
+            , url = "https://github.com"
+            }
+          , permissions = Some
+              ( toMap
+                  { GithubActions.types.Permission.id-token
+                    = GithubActions.types.PermissionAccess.read
+                  }
+              )
           , runs-on = GithubActions.types.RunsOn.`ubuntu-18.04`
           , steps = setup
           }
