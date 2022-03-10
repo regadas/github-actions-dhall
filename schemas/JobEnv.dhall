@@ -1,1 +1,1 @@
-{ Type = ../types/Jobenv.dhall }
+{ Type = ../types/JobEnv.dhall, default = ../defaults/JobEnv.dhall }

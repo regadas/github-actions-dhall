@@ -22,7 +22,7 @@ in  GithubActions.Workflow::{
           , name = Some "Publish"
           , environment = Some GithubActions.JobEnv::{
             , name = "production"
-            , url = "https://github.com"
+            , url = Some "https://github.com"
             }
           , permissions = Some
               ( toMap
