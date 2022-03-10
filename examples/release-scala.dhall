@@ -1,6 +1,6 @@
 let GithubActions =
       https://raw.githubusercontent.com/regadas/github-actions-dhall/master/package.dhall
-        sha256:53da2310a2e009556455a73684b997c3bd53192637ac3c77562c30e3815f5f23
+        sha256:5f6186e1b91770b20ff257a7d503d428c8f6bcaf5f0594e5de71506d31bbfe79
 
 let setup =
       [ GithubActions.steps.actions/checkout
@@ -25,11 +25,10 @@ in  GithubActions.Workflow::{
             , url = Some "https://github.com"
             }
           , permissions = Some
-              ( toMap
-                  { GithubActions.types.Permission.id-token
-                    = GithubActions.types.PermissionAccess.read
-                  }
-              )
+            [ { mapKey = GithubActions.types.Permission.id-token
+              , mapValue = GithubActions.types.PermissionAccess.read
+              }
+            ]
           , runs-on = GithubActions.types.RunsOn.`ubuntu-18.04`
           , steps = setup
           }
