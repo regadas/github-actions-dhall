@@ -1,6 +1,9 @@
 { Job =
     ./types/Job.dhall
-      sha256:511278f612a5a880dc9e6b3770ed1efec45e9bac01eb5b4417d305996bf88e26
+      sha256:0cf964346d730539d9f439de76fd3c0bd2ece0f59e540f29b504aaf5d3904e11
+, JobEnv =
+    ./types/JobEnv.dhall
+      sha256:521e86d74ae30cec88804eb9fa8014510297c9cf6b4b412d1576df31ed72dc6f
 , Defaults =
     ./types/Defaults.dhall
       sha256:a2963761aaa06bae9abd5575667afbba6539d8ce694a4a82900bf4f9df2e7932
@@ -24,7 +27,7 @@
       sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
     ./types/Workflow.dhall
-      sha256:11e829cbcc0d1d67247d31b7c45f8748c98e2d5cf3828c676dc6d46930ed8db1
+      sha256:46e35fb44d75052bcbe3bc134ca744cb835df4269fb67c73b1fb3f4460d3e61d
 , Push =
     ./types/events/Push.dhall
       sha256:5147b1dd6eca94aae5d217b979cac20ba64b7ec160488dd917f171cae451b135
@@ -37,6 +40,12 @@
 , Concurrency =
     ./types/Concurrency.dhall
       sha256:76a98598b0b13d496c062d301b27c82059be340aae993285c6b345ec494a4913
+, Permission =
+    ./types/Permission.dhall
+      sha256:b2a2f093af7412e34040a806e226ee4e7d691bd18df5c46bbfcc7cd222a37a2d
+, PermissionAccess =
+    ./types/PermissionAccess.dhall
+      sha256:50f036b7dc434a4b2e7e847943fe5c31846bf38ec1795de8baafe76cfe6382b6
 , Schedule =
     ./types/events/Schedule.dhall
       sha256:eb91edc996fadffb9cac1b67a4da220eed6bf54e96f7b8accbb613462e402537

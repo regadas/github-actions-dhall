@@ -1,6 +1,10 @@
 jobs:
   build:
     name: Publish
+    environment:
+      name: production
+      url: https://github.com
+      id-token: read
     runs-on: ubuntu-18.04
     steps:
       - uses: "actions/checkout@v2"
