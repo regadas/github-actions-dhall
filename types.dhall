@@ -34,6 +34,9 @@
 , PullRequest =
     ./types/events/PullRequest.dhall
       sha256:0eaa196a5ed1c6659cb224a91bf235c5e837cf700e1f72f40957ba4674b6798d
+, PullRequestReview =
+    ./types/events/PullRequestReview.dhall
+      sha256:f7a1d37a7fa9ce33f736813d132503dcf9c46a3fc72c7327c07d799af9f6ea63
 , Delete =
     ./types/events/Delete.dhall
       sha256:0912602a19e01dcff30f351958d2d9b69519c9be61b57b1b32a2a569bf8bf5f9

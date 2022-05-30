@@ -19,6 +19,9 @@
 , PullRequest =
     ./defaults/events/PullRequest.dhall
       sha256:16bd824da08ba557823a66d8bf644b2531a48786830e939da31bf24dd263184d
+, PullRequestReview =
+    ./defaults/events/PullRequestReview.dhall
+      sha256:9adb6b3b154d4f1df647c43579e37be36ac9bbb7848cdba159863220ec52bb9f
 , Delete =
     ./defaults/events/Delete.dhall
       sha256:9bb9dcb5bf6f795291686f59383bcd01c8e79b87fc3fb63351d46dea100ac51b

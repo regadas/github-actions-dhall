@@ -28,6 +28,9 @@
 , PullRequest =
     ./schemas/events/PullRequest.dhall
       sha256:c4ed0bb5d4968a4cccd48c978fc1c1f8bf0ee12265f6e3ea043e53f18f6c06a7
+, PullRequestReview =
+    ./schemas/events/PullRequestReview.dhall
+      sha256:53256e908fe5eb196af560db2c337b6cbc35c2eee48d6d459714554c8f777c9d
 , Delete =
     ./schemas/events/Delete.dhall
       sha256:81a1bf11fb9dc588941bd83400ed571298585a700a53e858456806f7ea3b8ce2
