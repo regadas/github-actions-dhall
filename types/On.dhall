@@ -2,6 +2,8 @@ let Push = ./events/Push.dhall
 
 let PullRequest = ./events/PullRequest.dhall
 
+let PullRequestReview = ./events/PullRequestReview.dhall
+
 let Delete = ./events/Delete.dhall
 
 let Schedule = ./events/Schedule.dhall
@@ -14,6 +16,7 @@ let Release = ./events/Release.dhall
 
 in  { push : Optional Push
     , pull_request : Optional PullRequest
+    , pull_request_review : Optional PullRequestReview
     , delete : Optional Delete
     , schedule : Optional (List Schedule)
     , workflow_dispatch : Optional WorkflowDispatch

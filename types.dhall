@@ -12,7 +12,7 @@
       sha256:060bf27380c527f136c2c86ba1cf1f7cab6ad3dd339e655db0873cc8068b7b9d
 , On =
     ./types/On.dhall
-      sha256:2f40484c1e006e7693ff8335c40b335a1277ce7c31892904a2cef0ecc20876c5
+      sha256:fe10c0076ea72be36c6afff879330f9e9008b97099a02b48865e6bd22d0fd0d0
 , Step =
     ./types/Step.dhall
       sha256:54f06c3c6ff505780eb30547e29288a4e8b96b29913f77fd086b4652c002bdda
@@ -27,13 +27,16 @@
       sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
     ./types/Workflow.dhall
-      sha256:46e35fb44d75052bcbe3bc134ca744cb835df4269fb67c73b1fb3f4460d3e61d
+      sha256:0ce7bf5d8c987f86149f42c62f1ca343823cc799d16665d9861bbe367c152f6a
 , Push =
     ./types/events/Push.dhall
       sha256:5147b1dd6eca94aae5d217b979cac20ba64b7ec160488dd917f171cae451b135
 , PullRequest =
     ./types/events/PullRequest.dhall
       sha256:0eaa196a5ed1c6659cb224a91bf235c5e837cf700e1f72f40957ba4674b6798d
+, PullRequestReview =
+    ./types/events/PullRequestReview.dhall
+      sha256:f7a1d37a7fa9ce33f736813d132503dcf9c46a3fc72c7327c07d799af9f6ea63
 , Delete =
     ./types/events/Delete.dhall
       sha256:0912602a19e01dcff30f351958d2d9b69519c9be61b57b1b32a2a569bf8bf5f9
