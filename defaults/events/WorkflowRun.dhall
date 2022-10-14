@@ -1,3 +1,1 @@
-{ types = None (List Text)
-, branches = None (List Text) 
-}
+{ types = None (List Text), branches = None (List Text) }
