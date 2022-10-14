@@ -13,4 +13,5 @@ in  { id : Optional Text
     , strategy : Optional Strategy
     , `if` : Optional Text
     , working-directory : Optional Text
+    , timeout-minutes : Optional Natural
     }
