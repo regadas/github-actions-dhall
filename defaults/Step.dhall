@@ -13,4 +13,5 @@ in  { env = None Env
     , strategy = None Strategy
     , `if` = None Text
     , working-directory = None Text
+    , timeout-minutes = None Natural
     }
