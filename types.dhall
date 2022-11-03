@@ -55,6 +55,9 @@
 , Input =
     ./types/Input.dhall
       sha256:4723eaffcfb407926dbda34ad46b0e4159885063a24aa26351fd86417a150c4a
+, RepositoryDispatch =
+    ./types/events/RepositoryDispatch.dhall
+      sha256:f7a1d37a7fa9ce33f736813d132503dcf9c46a3fc72c7327c07d799af9f6ea63
 , WorkflowDispatch =
     ./types/events/WorkflowDispatch.dhall
       sha256:6a5553c84dd7397eb24b3f94326d9ae9cfae04ace8fa55606319ee312d023ef8
