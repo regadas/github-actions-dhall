@@ -1,3 +1,3 @@
-{ Type = ../../types/events/WorkflowDispatch.dhall
-, default = ../../defaults/events/WorkflowDispatch.dhall
+{ Type = ../../types/events/RepositoryDispatch.dhall
+, default = ../../defaults/events/RepositoryDispatch.dhall
 }
