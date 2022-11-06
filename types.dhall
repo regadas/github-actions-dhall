@@ -27,7 +27,7 @@
       sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
     ./types/Workflow.dhall
-      sha256:f1bb77c55372877d090b75d1dc721432088cc4afa9e946b6e1831aa88342070b
+      sha256:31db6fb1f973b4bf80cca288eaa19cb9a2cabd5625ca0585466c9a68e4306fa8
 , Push =
     ./types/events/Push.dhall
       sha256:5147b1dd6eca94aae5d217b979cac20ba64b7ec160488dd917f171cae451b135
