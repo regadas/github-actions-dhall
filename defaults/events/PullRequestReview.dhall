@@ -1,2 +1,1 @@
-{ types = None (List Text)
-}
+{ types = None (List Text) }

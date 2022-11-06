@@ -1,6 +1,6 @@
 { Job =
     ./schemas/Job.dhall
-      sha256:b60300d5adb90e97fb00677e386f06804488a3efc6a1fe8d7a96e838adf2485d
+      sha256:9f5f7c08ffa99a327876802727163aaef4d98d933bb2e640a2155792691418c6
 , JobEnv =
     ./schemas/JobEnv.dhall
       sha256:9ccec904643ade1050323d9ce5da865a3ad8c764a7cbc0f3c397717b1a0ece74
@@ -12,7 +12,7 @@
       sha256:86f5d1f0c5dc24b2033237a9194f70b14326d6bae031bd44a0630e45dd3a4b3a
 , Step =
     ./schemas/Step.dhall
-      sha256:16dad11fe1fd6a7593a26ecc40ce3fdb6e6babacb4f6eb06aeb0b83ed2e15821
+      sha256:7e0c2877e2ee3d57de46c1bf631d36f3d0ff636f73514233dbed3f100d2530ce
 , Strategy =
     ./schemas/Strategy.dhall
       sha256:7161390c7ecb252191f9f1aba39ad2e1ae24773f4a2c1b3a1224e95bc5dd1db9
