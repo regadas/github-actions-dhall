@@ -12,7 +12,7 @@
       sha256:060bf27380c527f136c2c86ba1cf1f7cab6ad3dd339e655db0873cc8068b7b9d
 , On =
     ./types/On.dhall
-      sha256:fe10c0076ea72be36c6afff879330f9e9008b97099a02b48865e6bd22d0fd0d0
+      sha256:1b9cee24cb15eeef7d0d9eb61f9894898421adc5d68cad06c3445032da48e102
 , Step =
     ./types/Step.dhall
       sha256:c2efe65fd3b819521612000af9ebee52e7a74cce4c37de891dcdc7d6c25169fa
@@ -27,7 +27,7 @@
       sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
     ./types/Workflow.dhall
-      sha256:d74d3fc66c52dd53a618ce8913920c09acba757e788faab624b11bc4158bae5c
+      sha256:f1bb77c55372877d090b75d1dc721432088cc4afa9e946b6e1831aa88342070b
 , Push =
     ./types/events/Push.dhall
       sha256:5147b1dd6eca94aae5d217b979cac20ba64b7ec160488dd917f171cae451b135
@@ -55,6 +55,9 @@
 , Input =
     ./types/Input.dhall
       sha256:4723eaffcfb407926dbda34ad46b0e4159885063a24aa26351fd86417a150c4a
+, RepositoryDispatch =
+    ./types/events/RepositoryDispatch.dhall
+      sha256:f7a1d37a7fa9ce33f736813d132503dcf9c46a3fc72c7327c07d799af9f6ea63
 , WorkflowDispatch =
     ./types/events/WorkflowDispatch.dhall
       sha256:6a5553c84dd7397eb24b3f94326d9ae9cfae04ace8fa55606319ee312d023ef8
