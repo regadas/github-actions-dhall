@@ -36,4 +36,5 @@ in  { name : Optional Text
     , concurrency : Optional Concurrency
     , permissions :
         Optional (List { mapKey : Permission, mapValue : PermissionAccess })
+    , secrets: Optional (List { mapKey : Text, mapValue : Text })
     }
