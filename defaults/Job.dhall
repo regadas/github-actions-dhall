@@ -30,4 +30,5 @@ in  { name = None Text
     , concurrency = None Concurrency
     , permissions =
         None (List { mapKey : Permission, mapValue : PermissionAccess })
+    , secrets = None (List { mapKey : Text, mapValue : Text })
     }

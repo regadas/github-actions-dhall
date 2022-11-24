@@ -1,6 +1,6 @@
 { Job =
     ./types/Job.dhall
-      sha256:78227a2dde64b328969709adc7016955ba15ab421197c5a044356176ce291276
+      sha256:c96169cb1e2a65e6d6d9f11fc29589d306abb626aaeda34355c42bda5de37af1
 , JobEnv =
     ./types/JobEnv.dhall
       sha256:521e86d74ae30cec88804eb9fa8014510297c9cf6b4b412d1576df31ed72dc6f
@@ -27,7 +27,7 @@
       sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
     ./types/Workflow.dhall
-      sha256:31db6fb1f973b4bf80cca288eaa19cb9a2cabd5625ca0585466c9a68e4306fa8
+      sha256:cf6bac3a376287e5cbd9c7ae94c8f60ba3d608ccff29bcf96dc563a9a8fa9c42
 , Push =
     ./types/events/Push.dhall
       sha256:5147b1dd6eca94aae5d217b979cac20ba64b7ec160488dd917f171cae451b135
