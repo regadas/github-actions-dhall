@@ -54,7 +54,7 @@
       sha256:53256e908fe5eb196af560db2c337b6cbc35c2eee48d6d459714554c8f777c9d
 , WorkflowCall =
     ./schemas/events/WorkflowCall.dhall
-      sha256:c8cf2a97c7b540cf9acc23ebe3d51dda0d283e8c7136110f414c0194cbd4cde4
+      sha256:cafacd2c02714f9e00ad420661a13bf80bab0921f99601ff38338e6eaefc1ad9
 , WorkflowDispatch =
     ./schemas/events/WorkflowDispatch.dhall
       sha256:f3243d9aaa461034e9844d51fb4e2c646a956ea3df2d1f12ae31e16ee29b1a55
