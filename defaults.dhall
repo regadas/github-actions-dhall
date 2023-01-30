@@ -31,9 +31,18 @@
 , Input =
     ./defaults/Input.dhall
       sha256:047d951f9f951543458f7dd6ceffb5d53585fe2d59ff2a1616e8f4e130615f1a
+, Output =
+    ./defaults/Output.dhall
+      sha256:15e5b80617e8fe293b16c2698712ac767dc1690ff74f28b174539cc664caa3dd
+, Secret =
+    ./defaults/Secret.dhall
+      sha256:a810bcbb4fa7a5bca45fcc87a896cde15bf619256f7de3eed52a95ec48ffa04e
 , RepositoryDispatch =
     ./defaults/events/RepositoryDispatch.dhall
       sha256:9adb6b3b154d4f1df647c43579e37be36ac9bbb7848cdba159863220ec52bb9f
+, WorkflowCall =
+    ./defaults/events/WorkflowCall.dhall
+      sha256:2133dc321eb5b06cd0c9ffb6cd412fa1dfd7e20c4341fecbff2b17ce29119958
 , WorkflowDispatch =
     ./defaults/events/WorkflowDispatch.dhall
       sha256:2133dc321eb5b06cd0c9ffb6cd412fa1dfd7e20c4341fecbff2b17ce29119958

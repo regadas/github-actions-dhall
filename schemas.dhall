@@ -43,9 +43,18 @@
 , Input =
     ./schemas/Input.dhall
       sha256:f15ab36ac38cb32a757173088ec95050e3cb3fe8765bd1d4cc49851cec7877d8
+, Output =
+    ./schemas/Output.dhall
+      sha256:f01b31455186c9ecf937b48023d9408a7d5bf5db3fc4964b6060a43e1c4dabe8
+, Secret =
+    ./schemas/Secret.dhall
+      sha256:a58fd6ad314edcd6800e283206de83e76cb0b3d56998570b1f5482a2d8f4a56f
 , RepositoryDispatch =
     ./schemas/events/RepositoryDispatch.dhall
       sha256:53256e908fe5eb196af560db2c337b6cbc35c2eee48d6d459714554c8f777c9d
+, WorkflowCall =
+    ./schemas/events/WorkflowCall.dhall
+      sha256:c8cf2a97c7b540cf9acc23ebe3d51dda0d283e8c7136110f414c0194cbd4cde4
 , WorkflowDispatch =
     ./schemas/events/WorkflowDispatch.dhall
       sha256:f3243d9aaa461034e9844d51fb4e2c646a956ea3df2d1f12ae31e16ee29b1a55
