@@ -16,6 +16,8 @@ let WorkflowRun = ../types/events/WorkflowRun.dhall
 
 let Release = ../types/events/Release.dhall
 
+let MergeGroup = ../types/events/MergeGroup.dhall
+
 in  { push = None Push
     , pull_request = None PullRequest
     , pull_request_review = None PullRequestReview
@@ -25,4 +27,5 @@ in  { push = None Push
     , workflow_dispatch = None WorkflowDispatch
     , workflow_run = None WorkflowRun
     , release = None Release
+    , merge_group = None MergeGroup
     }
