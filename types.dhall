@@ -12,7 +12,7 @@
       sha256:060bf27380c527f136c2c86ba1cf1f7cab6ad3dd339e655db0873cc8068b7b9d
 , On =
     ./types/On.dhall
-      sha256:488cf8f32c7043bea7d45048a490c2c1508e8d7a92fc5fcef73c1d08f7a7bf22
+      sha256:32bdaae69fe18855179af3f880bae8540d61b2ff154efe2fc9b2fe24a8fe209b
 , Step =
     ./types/Step.dhall
       sha256:c2efe65fd3b819521612000af9ebee52e7a74cce4c37de891dcdc7d6c25169fa
@@ -27,7 +27,7 @@
       sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
     ./types/Workflow.dhall
-      sha256:cc358fbe54c43cf9e900e5eb27a8ef3eba5534f727002e0ef1ef9d8d24af7701
+      sha256:1b3082acb962616d1534dea30542fecd371eea07acd550f854f449b49bded94c
 , Push =
     ./types/events/Push.dhall
       sha256:5147b1dd6eca94aae5d217b979cac20ba64b7ec160488dd917f171cae451b135
@@ -75,5 +75,8 @@
       sha256:3cfef5c383d40623d0766715715c881583623bf6e11a0ad0b9946d8eaeffa6c5
 , MergeGroup =
     ./types/events/MergeGroup.dhall
-      sha256:f7a1d37a7fa9ce33f736813d132503dcf9c46a3fc72c7327c07d799af9f6ea63
+      sha256:6932501dad0293756c78e48f64ae6b5549d373f7a178c26e300b69341de81fd6
+, MergeGroup/types =
+    ./types/events/merge_group/types.dhall
+      sha256:395eaa0f656449d1bca8c63e6631a999c47deab93659ad1a2b4999d415f8d0ac
 }
