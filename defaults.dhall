@@ -3,7 +3,7 @@
       sha256:8e633f97ecc18a9abe878adf4b0b63c07d079c10d05ac96e6d0d7bb13dc7bfb0
 , On =
     ./defaults/On.dhall
-      sha256:74396c523fc99bf5d8334091c8e6ba3ae5ae36ba3cfb60e3c6d3a76b3d58bc25
+      sha256:da5a3dff9e02909bd1386ca67e8403131351d0999962d0431ce258afffe39721
 , Step =
     ./defaults/Step.dhall
       sha256:fc31ac861cbf0231429dc5d94bf8a1f905fcdf6ec108e376c5c82b60d9ddf5c0
@@ -46,4 +46,7 @@
 , actions/HaskellSetup =
     ./defaults/actions/HaskellSetup.dhall
       sha256:e0762bf1442388cce1187fbac3e606685337f45b0e69251cfa33e513dc03c709
+, MergeGroup =
+    ./defaults/events/MergeGroup.dhall
+      sha256:61de39fb02b49bb17e966f3d22d769599874c1f98321b3accaffcbe3b9025b2b
 }

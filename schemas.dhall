@@ -6,7 +6,7 @@
       sha256:9ccec904643ade1050323d9ce5da865a3ad8c764a7cbc0f3c397717b1a0ece74
 , On =
     ./schemas/On.dhall
-      sha256:9c269ef17dda1545f7a6b954c195f5cc25de4066adbe8365e56c8361a7a53eb3
+      sha256:603d2e0e29b13e0fbe123b5468c19e1ba84fdb73ce46cace6c803ac06348f408
 , RunsOn =
     ./schemas/RunsOn.dhall
       sha256:86f5d1f0c5dc24b2033237a9194f70b14326d6bae031bd44a0630e45dd3a4b3a
@@ -21,7 +21,7 @@
       sha256:ccf7857f3b39aba24ae09b6eb2b430c96be6b3bc697ed6f0bae464e1e7bdff82
 , Workflow =
     ./schemas/Workflow.dhall
-      sha256:5f3f6f11f73fc99914094889140f9de47e1c55d9aee112ad8556e21dda5c1012
+      sha256:db179013df5c1bb345e47bddd604749c9b787f3e6913ddfcbb6174e4b4959548
 , Push =
     ./schemas/events/Push.dhall
       sha256:42b2efddec698fbb36321e738286478b35dfd9420ce10798659237570db55024
@@ -58,4 +58,7 @@
 , Concurrency =
     ./schemas/Concurrency.dhall
       sha256:2ed562a8c402ad394223c57857e52915ab16b94775dfc0f4d277f227b6c6d450
+, MergeGroup =
+    ./schemas/events/MergeGroup.dhall
+      sha256:4a3e8748d9a20ab6beec8bd7dcca67b465e600563c5dbfca4cd3d464c9f69dcb
 }
