@@ -18,9 +18,12 @@ let Release = ../types/events/Release.dhall
 
 let MergeGroup = ../types/events/MergeGroup.dhall
 
+let PullRequestTarget = ../types/events/PullRequestTarget.dhall
+
 in  { push = None Push
     , pull_request = None PullRequest
     , pull_request_review = None PullRequestReview
+    , pull_request_target = None PullRequestTarget
     , delete = None Delete
     , schedule = None (List Schedule)
     , repository_dispatch = None RepositoryDispatch

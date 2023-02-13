@@ -3,7 +3,7 @@
       sha256:8e633f97ecc18a9abe878adf4b0b63c07d079c10d05ac96e6d0d7bb13dc7bfb0
 , On =
     ./defaults/On.dhall
-      sha256:da5a3dff9e02909bd1386ca67e8403131351d0999962d0431ce258afffe39721
+      sha256:5237c0c8cc44b92d9e6cb19e858f8000e77cc8eedecb94dec9644ca44162b125
 , Step =
     ./defaults/Step.dhall
       sha256:fc31ac861cbf0231429dc5d94bf8a1f905fcdf6ec108e376c5c82b60d9ddf5c0

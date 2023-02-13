@@ -1,0 +1,1 @@
+< assigned | opened | synchronize | reopened >
