@@ -1,6 +1,6 @@
 let GithubActions =
       https://regadas.dev/github-actions-dhall/package.dhall
-        sha256:ea9519f085abb1cac6bbb7ac8087d9fac7dc5a6d137324e01137a4e8976cd370
+        sha256:4baaaba9f27947bfafab947b1568cbcbb9d52c7dc4d6cb2a4ffc67dc12ef6540
 
 let helloWorld =
       GithubActions.steps.actions/helloWorld
