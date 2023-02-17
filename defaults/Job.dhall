@@ -16,8 +16,11 @@ let Permission = ../types/Permission.dhall
 
 let PermissionAccess = ../types/PermissionAccess.dhall
 
+let ContinueOnError = ../types/ContinueOnError.dhall
+
 in  { name = None Text
     , needs = None (List Text)
+    , continue-on-error = None ContinueOnError
     , strategy = None Strategy
     , environment = None JobEnv
     , outputs = None (List { mapKey : Text, mapValue : Text })

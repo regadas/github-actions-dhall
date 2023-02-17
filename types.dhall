@@ -1,6 +1,6 @@
 { Job =
     ./types/Job.dhall
-      sha256:c96169cb1e2a65e6d6d9f11fc29589d306abb626aaeda34355c42bda5de37af1
+      sha256:d84571c575ce2f1d56dbddfa73494856296a079d341a3d05baa7d20ab39ce3fc
 , JobEnv =
     ./types/JobEnv.dhall
       sha256:521e86d74ae30cec88804eb9fa8014510297c9cf6b4b412d1576df31ed72dc6f
@@ -27,7 +27,7 @@
       sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
     ./types/Workflow.dhall
-      sha256:616bf6371588b75df451e4cecc2ca11cf886e83b46f975b3f22a9b96b31acca7
+      sha256:206cdf388ba8e3b832674d18a955ad0a6c509e65a4674b9e4aeb4609c3f260ae
 , Push =
     ./types/events/Push.dhall
       sha256:5147b1dd6eca94aae5d217b979cac20ba64b7ec160488dd917f171cae451b135
@@ -85,4 +85,7 @@
 , MergeGroup/types =
     ./types/events/merge_group/types.dhall
       sha256:395eaa0f656449d1bca8c63e6631a999c47deab93659ad1a2b4999d415f8d0ac
+, ContinueOnError =
+    ./types/ContinueOnError.dhall
+      sha256:83ad8f8eea100277b6658ac27c590d6ee43df14e4d1fc49a55c691e1033fd3e9
 }

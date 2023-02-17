@@ -20,8 +20,11 @@ let Permission = ./Permission.dhall
 
 let PermissionAccess = ./PermissionAccess.dhall
 
+let ContinueOnError = ./ContinueOnError.dhall
+
 in  { name : Optional Text
     , needs : Optional (List Text)
+    , continue-on-error : Optional ContinueOnError
     , runs-on : RunsOn
     , environment : Optional JobEnv
     , strategy : Optional Strategy
