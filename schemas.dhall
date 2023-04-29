@@ -63,7 +63,7 @@
       sha256:2ed562a8c402ad394223c57857e52915ab16b94775dfc0f4d277f227b6c6d450
 , Container =
     ./schemas/Container.dhall
-      sha256:a478f49a0b1f6ee1b31e9efa9547b5c690e8fb9500e4a84917ef9ee0a6b3765b
+      sha256:7eee1486550d25ac8de00cb12cfdb1cba0e1a1360f04c52fdf092b31411131e6
 , MergeGroup =
     ./schemas/events/MergeGroup.dhall
       sha256:4a3e8748d9a20ab6beec8bd7dcca67b465e600563c5dbfca4cd3d464c9f69dcb

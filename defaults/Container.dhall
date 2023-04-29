@@ -1,1 +1,1 @@
-{ image = Text, options = None Text }
+{ options = None Text }
