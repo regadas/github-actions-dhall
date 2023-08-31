@@ -18,7 +18,7 @@
       sha256:429ab447921ab87a92a45f8e3078a19f0efeef58e859f4648af9c4a2c2976180
 , PullRequest =
     ./defaults/events/PullRequest.dhall
-      sha256:16bd824da08ba557823a66d8bf644b2531a48786830e939da31bf24dd263184d
+      sha256:9e2fc019f7ce975624fd1f0b643d7356fcd4626ea3af911b21e9d046cf2c0d16
 , PullRequestReview =
     ./defaults/events/PullRequestReview.dhall
       sha256:9adb6b3b154d4f1df647c43579e37be36ac9bbb7848cdba159863220ec52bb9f
