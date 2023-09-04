@@ -3,7 +3,7 @@
       sha256:0b6c2901d8f26ad1ca0df889ac09eb55534473c92166097a5e8b717b90358cc8
 , On =
     ./defaults/On.dhall
-      sha256:5237c0c8cc44b92d9e6cb19e858f8000e77cc8eedecb94dec9644ca44162b125
+      sha256:048526efc174160bdaf8db6b254697e01d36f6d2411e9cd5da83647e751b7a25
 , Step =
     ./defaults/Step.dhall
       sha256:fc31ac861cbf0231429dc5d94bf8a1f905fcdf6ec108e376c5c82b60d9ddf5c0
@@ -18,7 +18,7 @@
       sha256:429ab447921ab87a92a45f8e3078a19f0efeef58e859f4648af9c4a2c2976180
 , PullRequest =
     ./defaults/events/PullRequest.dhall
-      sha256:16bd824da08ba557823a66d8bf644b2531a48786830e939da31bf24dd263184d
+      sha256:9e2fc019f7ce975624fd1f0b643d7356fcd4626ea3af911b21e9d046cf2c0d16
 , PullRequestReview =
     ./defaults/events/PullRequestReview.dhall
       sha256:9adb6b3b154d4f1df647c43579e37be36ac9bbb7848cdba159863220ec52bb9f
@@ -31,9 +31,18 @@
 , Input =
     ./defaults/Input.dhall
       sha256:047d951f9f951543458f7dd6ceffb5d53585fe2d59ff2a1616e8f4e130615f1a
+, Output =
+    ./defaults/Output.dhall
+      sha256:15e5b80617e8fe293b16c2698712ac767dc1690ff74f28b174539cc664caa3dd
+, Secret =
+    ./defaults/Secret.dhall
+      sha256:a810bcbb4fa7a5bca45fcc87a896cde15bf619256f7de3eed52a95ec48ffa04e
 , RepositoryDispatch =
     ./defaults/events/RepositoryDispatch.dhall
       sha256:9adb6b3b154d4f1df647c43579e37be36ac9bbb7848cdba159863220ec52bb9f
+, WorkflowCall =
+    ./defaults/events/WorkflowCall.dhall
+      sha256:8f27a30a5568ea13c7140f149d4c0087d4dad17baa4deaba1580f1dac6f983ed
 , WorkflowDispatch =
     ./defaults/events/WorkflowDispatch.dhall
       sha256:2133dc321eb5b06cd0c9ffb6cd412fa1dfd7e20c4341fecbff2b17ce29119958

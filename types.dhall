@@ -12,7 +12,7 @@
       sha256:060bf27380c527f136c2c86ba1cf1f7cab6ad3dd339e655db0873cc8068b7b9d
 , On =
     ./types/On.dhall
-      sha256:92d4b82ec461d4d65e0e0d70facad957d91fb154483f2080c8dbf3b42cb71557
+      sha256:aa5f44a98010892489d1e6b73e1dd0116d5c9c7880c0ccebd0678f609fb671e9
 , Step =
     ./types/Step.dhall
       sha256:c2efe65fd3b819521612000af9ebee52e7a74cce4c37de891dcdc7d6c25169fa
@@ -27,22 +27,22 @@
       sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
     ./types/Workflow.dhall
-      sha256:4eb4fb7896551a89f5fb2d1e4ed2592fbca6b0297eeee40d1834eb78ebbd4487
+      sha256:8c61b0e08c560608a0f97ed1d93ac351df1cd9b8ce64e23d2d647a227de79ba7
 , Push =
     ./types/events/Push.dhall
       sha256:5147b1dd6eca94aae5d217b979cac20ba64b7ec160488dd917f171cae451b135
 , PullRequest =
     ./types/events/PullRequest.dhall
-      sha256:0eaa196a5ed1c6659cb224a91bf235c5e837cf700e1f72f40957ba4674b6798d
+      sha256:6b42c650c5a849dc6445287b85f6a55618f5e135be6cb8ef847a9c46d6c6672c
 , PullRequestReview =
     ./types/events/PullRequestReview.dhall
       sha256:f7a1d37a7fa9ce33f736813d132503dcf9c46a3fc72c7327c07d799af9f6ea63
 , PullRequestTarget =
     ./types/events/PullRequestTarget.dhall
-      sha256:9fdd8e4bc6e46d0b4989ee2d6f875d07d96eca41e1ebf3ca4799e59d90ea9fdb
+      sha256:20591763afd7bd762652e3bd5c856fc76b5f21c207e89bde486910e6ecada115
 , PullRequestTarget/types =
     ./types/events/pull_request_target/types.dhall
-      sha256:1bd793b250a4f223653e63c8cf01af28cc211f62b31e7f41d0817c6ca6caaa0a
+      sha256:d5c8dc5f02a449316dc2a8ac0e1b145b545ba73c900bfc2bc97f097929af3f1c
 , Delete =
     ./types/events/Delete.dhall
       sha256:0912602a19e01dcff30f351958d2d9b69519c9be61b57b1b32a2a569bf8bf5f9
@@ -64,9 +64,18 @@
 , Input =
     ./types/Input.dhall
       sha256:4723eaffcfb407926dbda34ad46b0e4159885063a24aa26351fd86417a150c4a
+, Output =
+    ./types/Output.dhall
+      sha256:4c7baccef8bd151904013c18b9cb539944019e8d85c2cb53c89d01988cde052c
+, Secret =
+    ./types/Secret.dhall
+      sha256:8db70cb6694b1748740dd506ebb8e35af3baa01cf3e1b7883dbac2637703c081
 , RepositoryDispatch =
     ./types/events/RepositoryDispatch.dhall
       sha256:f7a1d37a7fa9ce33f736813d132503dcf9c46a3fc72c7327c07d799af9f6ea63
+, WorkflowCall =
+    ./types/events/WorkflowCall.dhall
+      sha256:8fa0371a0e0618210d7ac34213b516c726194410055879eafc8f8e2523ba6a8a
 , WorkflowDispatch =
     ./types/events/WorkflowDispatch.dhall
       sha256:6a5553c84dd7397eb24b3f94326d9ae9cfae04ace8fa55606319ee312d023ef8

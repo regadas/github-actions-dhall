@@ -10,6 +10,8 @@ let Schedule = ../types/events/Schedule.dhall
 
 let RepositoryDispatch = ../types/events/RepositoryDispatch.dhall
 
+let WorkflowCall = ../types/events/WorkflowCall.dhall
+
 let WorkflowDispatch = ../types/events/WorkflowDispatch.dhall
 
 let WorkflowRun = ../types/events/WorkflowRun.dhall
@@ -27,6 +29,7 @@ in  { push = None Push
     , delete = None Delete
     , schedule = None (List Schedule)
     , repository_dispatch = None RepositoryDispatch
+    , workflow_call = None WorkflowCall
     , workflow_dispatch = None WorkflowDispatch
     , workflow_run = None WorkflowRun
     , release = None Release
