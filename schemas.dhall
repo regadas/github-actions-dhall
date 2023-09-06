@@ -1,6 +1,6 @@
 { Job =
     ./schemas/Job.dhall
-      sha256:737288e197103c8d0a267bc31f4939d2aa8e7d1feb849836e9aac8986f39a9f1
+      sha256:e96bc1c8a9f662d348bd72a2613449cade5e00ab3132de531ce04ce859faba48
 , JobEnv =
     ./schemas/JobEnv.dhall
       sha256:9ccec904643ade1050323d9ce5da865a3ad8c764a7cbc0f3c397717b1a0ece74
@@ -21,7 +21,7 @@
       sha256:ccf7857f3b39aba24ae09b6eb2b430c96be6b3bc697ed6f0bae464e1e7bdff82
 , Workflow =
     ./schemas/Workflow.dhall
-      sha256:d2479753825ff5805cbbe4ef0a5600801a95ee46945c3710d4acf575f7b00976
+      sha256:b72583f0346169b1c24f73412f29b193e282a5e74b42e69b8ad73f2eebf3fe57
 , Push =
     ./schemas/events/Push.dhall
       sha256:42b2efddec698fbb36321e738286478b35dfd9420ce10798659237570db55024
@@ -70,6 +70,9 @@
 , Concurrency =
     ./schemas/Concurrency.dhall
       sha256:2ed562a8c402ad394223c57857e52915ab16b94775dfc0f4d277f227b6c6d450
+, Container =
+    ./schemas/Container.dhall
+      sha256:7eee1486550d25ac8de00cb12cfdb1cba0e1a1360f04c52fdf092b31411131e6
 , MergeGroup =
     ./schemas/events/MergeGroup.dhall
       sha256:4a3e8748d9a20ab6beec8bd7dcca67b465e600563c5dbfca4cd3d464c9f69dcb
