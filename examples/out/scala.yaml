@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: "actions/checkout@v2"
       - name: "~/.sbt\n\"~/.cache/coursier\"\n cache"
-        uses: "actions/cache@v3"
+        uses: "actions/cache@v4"
         with:
           key: "${{ runner.os }}-sbt-${{ hashFiles('build.sbt', 'project/plugins.sbt', 'project/build.properties', 'project/Dependencies.scala') }}"
           path: |
@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: "actions/checkout@v2"
       - name: "~/.sbt\n\"~/.cache/coursier\"\n cache"
-        uses: "actions/cache@v3"
+        uses: "actions/cache@v4"
         with:
           key: "${{ runner.os }}-sbt-${{ hashFiles('build.sbt', 'project/plugins.sbt', 'project/build.properties', 'project/Dependencies.scala') }}"
           path: |
