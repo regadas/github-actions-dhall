@@ -9,7 +9,7 @@
       sha256:8a22d29eea007b2df0c3467dc732b835e46f3daccefba38312d4b4446c50b006
 , actions/cache =
     ./steps/actions/cache.dhall
-      sha256:8828d57d24a29354d6be9ca28db540224f89aec12cda593abe1580729e10ebc4
+      sha256:b6d6702a9faa91b3b64f9ac7e84b1f8706a460dd02fcf2e47cbbedb9053e6e96
 , actions/helloWorld =
     ./steps/actions/helloWorld.dhall
       sha256:69bc163d0b30165fb1792c23871a0ad6fade1095517f6b3fa3b834a615f3d2fc

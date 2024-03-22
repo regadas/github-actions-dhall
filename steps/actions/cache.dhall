@@ -22,7 +22,7 @@ in  λ(args : { path : Text, key : Text, hashFiles : List Text }) →
 
       in  Step::{
           , name = Some "${args.path} cache"
-          , uses = Some "actions/cache@v3"
+          , uses = Some "actions/cache@v4"
           , `with` = Some
               ( toMap
                   { path = args.path
