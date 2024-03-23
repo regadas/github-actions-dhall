@@ -5,6 +5,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: dhall-lang/setup-dhall@v4
+        with:
+          version: "1.42.0"
       - name: dhall freeze
         run: dhall freeze --all ./package.dhall
 
