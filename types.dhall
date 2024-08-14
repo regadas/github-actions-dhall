@@ -64,6 +64,9 @@
 , Input =
     ./types/Input.dhall
       sha256:03df056682410688325a8cca24cd3c167b2db0a1b87596450de5638ffaa68b2c
+, InputType =
+    ./types/InputType.dhall
+      sha256:abf2c8ba31afdcd4a7ffc485968d38395dc2e36fbd8d748a6889b532fdc6209f
 , Output =
     ./types/Output.dhall
       sha256:4c7baccef8bd151904013c18b9cb539944019e8d85c2cb53c89d01988cde052c
