@@ -3,7 +3,7 @@
       sha256:0b6c2901d8f26ad1ca0df889ac09eb55534473c92166097a5e8b717b90358cc8
 , On =
     ./defaults/On.dhall
-      sha256:048526efc174160bdaf8db6b254697e01d36f6d2411e9cd5da83647e751b7a25
+      sha256:863bd06803849476a3c097ea67465867c2ca232bbe8f8250fb151278d2e3cebd
 , Step =
     ./defaults/Step.dhall
       sha256:fc31ac861cbf0231429dc5d94bf8a1f905fcdf6ec108e376c5c82b60d9ddf5c0
@@ -42,10 +42,10 @@
       sha256:9adb6b3b154d4f1df647c43579e37be36ac9bbb7848cdba159863220ec52bb9f
 , WorkflowCall =
     ./defaults/events/WorkflowCall.dhall
-      sha256:8f27a30a5568ea13c7140f149d4c0087d4dad17baa4deaba1580f1dac6f983ed
+      sha256:3915943138e887c98ee7a05bd19461dc22ca892614f14e4fbac7c7ba8c8eb97e
 , WorkflowDispatch =
     ./defaults/events/WorkflowDispatch.dhall
-      sha256:2133dc321eb5b06cd0c9ffb6cd412fa1dfd7e20c4341fecbff2b17ce29119958
+      sha256:a716e8cb55dc8f5eb7ac0ad7dd5001c8294f18af73027fcc32668793be084d29
 , WorkflowRun =
     ./defaults/events/WorkflowRun.dhall
       sha256:1c1282b9bd39e056cf38d17a3f5e235e80af8cd98f9163addd508d0a792a6c51
