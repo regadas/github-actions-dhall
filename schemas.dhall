@@ -42,7 +42,7 @@
       sha256:03caaa6deeed4018094f9a77b2db6f49c28ca75874c44e2256e8147894c30746
 , Input =
     ./schemas/Input.dhall
-      sha256:f1a8de2b17261b4665f264703c7e984d0a8da6a9202b402aeb84dc281e8f98e4
+      sha256:e7d67b6e4cc8f4f306cbcf63726aaa98857e5f82b1f5144c9bc20e6792d4c327
 , Output =
     ./schemas/Output.dhall
       sha256:f01b31455186c9ecf937b48023d9408a7d5bf5db3fc4964b6060a43e1c4dabe8

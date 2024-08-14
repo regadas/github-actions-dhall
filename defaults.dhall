@@ -30,7 +30,7 @@
       sha256:9bb9dcb5bf6f795291686f59383bcd01c8e79b87fc3fb63351d46dea100ac51b
 , Input =
     ./defaults/Input.dhall
-      sha256:047d951f9f951543458f7dd6ceffb5d53585fe2d59ff2a1616e8f4e130615f1a
+      sha256:df12c8ed01a5352e459a85682b0f85dbf87c9b77536c91ac351dc4c2b53b6fca
 , Output =
     ./defaults/Output.dhall
       sha256:15e5b80617e8fe293b16c2698712ac767dc1690ff74f28b174539cc664caa3dd
