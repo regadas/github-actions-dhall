@@ -43,6 +43,9 @@
 , Input =
     ./schemas/Input.dhall
       sha256:e7d67b6e4cc8f4f306cbcf63726aaa98857e5f82b1f5144c9bc20e6792d4c327
+, InputType =
+    ./schemas/InputType.dhall
+      sha256:1a3f2617073a99318a669399297294488d9a6a69100ca9607c44609a9a62343e
 , Output =
     ./schemas/Output.dhall
       sha256:f01b31455186c9ecf937b48023d9408a7d5bf5db3fc4964b6060a43e1c4dabe8
