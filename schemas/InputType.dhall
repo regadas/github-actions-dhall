@@ -1,0 +1,1 @@
+{ Type = ../types/InputType.dhall }
