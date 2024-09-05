@@ -1,6 +1,6 @@
 { Job =
     ./types/Job.dhall
-      sha256:12eac8e789ab64e3c784beee10bda21fcbdb011ad45874276bb088fd42ee0577
+      sha256:188b0ff021b3655e231fd815ec318f7c4bbb09c80e21476279500de49ab41945
 , JobEnv =
     ./types/JobEnv.dhall
       sha256:521e86d74ae30cec88804eb9fa8014510297c9cf6b4b412d1576df31ed72dc6f
@@ -12,13 +12,13 @@
       sha256:060bf27380c527f136c2c86ba1cf1f7cab6ad3dd339e655db0873cc8068b7b9d
 , On =
     ./types/On.dhall
-      sha256:aa5f44a98010892489d1e6b73e1dd0116d5c9c7880c0ccebd0678f609fb671e9
+      sha256:72fbd13d4345c106ea4dcaea1e90886f87132165c9203ffcf4a230c216ddb754
 , Step =
     ./types/Step.dhall
       sha256:c2efe65fd3b819521612000af9ebee52e7a74cce4c37de891dcdc7d6c25169fa
 , RunsOn =
     ./types/RunsOn.dhall
-      sha256:9efc5b4e1cc4ce2f06aa59c77ae4f9fb47287d79b65c8469dbfa375af9eb21e8
+      sha256:17864110f3cc91183c178f8218967c500f3493391e5327740dd1f19c74eb6ee2
 , Env =
     ./types/Env.dhall
       sha256:e73a2ec07449acffe1a4ba9cd261b845a8beb8f81fbc1415575639e99da668e6
@@ -27,7 +27,7 @@
       sha256:c957b80c6a0d53dce7bf05921c1983797b5d52958ded76244cd94ae80deb94e5
 , Workflow =
     ./types/Workflow.dhall
-      sha256:8c61b0e08c560608a0f97ed1d93ac351df1cd9b8ce64e23d2d647a227de79ba7
+      sha256:8b9199905c1a9a900e2678c36018d93815c2339db5c5f65d54e9873f468c48f9
 , Push =
     ./types/events/Push.dhall
       sha256:5147b1dd6eca94aae5d217b979cac20ba64b7ec160488dd917f171cae451b135
@@ -63,7 +63,10 @@
       sha256:eb91edc996fadffb9cac1b67a4da220eed6bf54e96f7b8accbb613462e402537
 , Input =
     ./types/Input.dhall
-      sha256:4723eaffcfb407926dbda34ad46b0e4159885063a24aa26351fd86417a150c4a
+      sha256:03df056682410688325a8cca24cd3c167b2db0a1b87596450de5638ffaa68b2c
+, InputType =
+    ./types/InputType.dhall
+      sha256:abf2c8ba31afdcd4a7ffc485968d38395dc2e36fbd8d748a6889b532fdc6209f
 , Output =
     ./types/Output.dhall
       sha256:4c7baccef8bd151904013c18b9cb539944019e8d85c2cb53c89d01988cde052c
@@ -75,10 +78,10 @@
       sha256:f7a1d37a7fa9ce33f736813d132503dcf9c46a3fc72c7327c07d799af9f6ea63
 , WorkflowCall =
     ./types/events/WorkflowCall.dhall
-      sha256:8fa0371a0e0618210d7ac34213b516c726194410055879eafc8f8e2523ba6a8a
+      sha256:08e5e74916cbdd4bb28988b144ecec79ece5d56336d84e458fc9e2985b0ba681
 , WorkflowDispatch =
     ./types/events/WorkflowDispatch.dhall
-      sha256:6a5553c84dd7397eb24b3f94326d9ae9cfae04ace8fa55606319ee312d023ef8
+      sha256:7c424307eed6fd275ccba117a66d3850b71ea6d41791d0544d1fad6f2ac5025a
 , WorkflowRun =
     ./types/events/WorkflowRun.dhall
       sha256:63a3c3130a74d1af7e25a73b55ab719cda4a26ba0bfdee72214be7e43d23c46a
