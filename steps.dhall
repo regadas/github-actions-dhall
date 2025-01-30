@@ -6,7 +6,7 @@
       sha256:3606d47244c51259f4d1b4761cf55a38fca1f72de1bc06db55be0c38068e3f86
 , actions/checkout =
     ./steps/actions/checkout.dhall
-      sha256:8a22d29eea007b2df0c3467dc732b835e46f3daccefba38312d4b4446c50b006
+      sha256:7d8c6b63344856344d9a29724f3ca45dd0f02e9045be6438648655b2eab5fd7c
 , actions/cache =
     ./steps/actions/cache.dhall
       sha256:b6d6702a9faa91b3b64f9ac7e84b1f8706a460dd02fcf2e47cbbedb9053e6e96

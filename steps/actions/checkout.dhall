@@ -1,3 +1,3 @@
 let Step = ../../schemas/Step.dhall
 
-in  Step::{ uses = Some "actions/checkout@v2" }
+in  Step::{ uses = Some "actions/checkout@v4" }
