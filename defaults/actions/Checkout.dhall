@@ -1,0 +1,21 @@
+{ repository = None Text
+, ref = None Text
+, token = None Text
+, ssh-key = None Text
+, ssh-known-hosts = None Text
+, ssh-strict = None Bool
+, ssh-user = None Text
+, persist-credentials = None Bool
+, path = None Text
+, clean = None Bool
+, filter = None Text
+, sparse-checkout = None Text
+, sparse-checkout-cone-mode = None Bool
+, fetch-depth = None Natural
+, fetch-tags = None Bool
+, show-progress = None Bool
+, lfs = None Bool
+, submodules = None Text
+, set-safe-directory = None Bool
+, github-server-url = None Text
+} 

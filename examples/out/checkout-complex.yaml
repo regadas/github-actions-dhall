@@ -1,0 +1,32 @@
+jobs:
+  "checkout-examples":
+    name: Checkout Examples
+    "runs-on": "ubuntu-latest"
+    steps:
+    - uses: "actions/checkout@v4"
+      with:
+        "fetch-depth": '0'
+        ref: main
+    - uses: "actions/checkout@v4"
+      with:
+        path: "./private-repo"
+        repository: "myorg/private-repo"
+        "sparse-checkout": |
+          src/
+          docs/
+          tests/
+        "sparse-checkout-cone-mode": 'true'
+        token: "${{ secrets.PAT_TOKEN }}"
+    - uses: "actions/checkout@v4"
+      with:
+        "fetch-depth": '1'
+        lfs: 'true'
+        submodules: recursive
+name: Complex Checkout Example
+'on':
+  push:
+    branches:
+    - main
+    - develop
+    "paths-ignore":
+    - "docs/**"

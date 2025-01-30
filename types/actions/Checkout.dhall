@@ -1,0 +1,21 @@
+{ repository : Optional Text
+, ref : Optional Text
+, token : Optional Text
+, ssh-key : Optional Text
+, ssh-known-hosts : Optional Text
+, ssh-strict : Optional Bool
+, ssh-user : Optional Text
+, persist-credentials : Optional Bool
+, path : Optional Text
+, clean : Optional Bool
+, filter : Optional Text
+, sparse-checkout : Optional Text
+, sparse-checkout-cone-mode : Optional Bool
+, fetch-depth : Optional Natural
+, fetch-tags : Optional Bool
+, show-progress : Optional Bool
+, lfs : Optional Bool
+, submodules : Optional Text
+, set-safe-directory : Optional Bool
+, github-server-url : Optional Text
+} 
