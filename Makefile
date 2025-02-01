@@ -9,7 +9,7 @@ all: freeze examples
 
 examples/out/%.yaml: examples/%.dhall
 	mkdir -p .cache
-	sed 's#https://raw.*package.dhall.*#./package.dhall#' $< | \
+	sed 's#https://regadas.dev.*package.dhall.*#./package.dhall#' $< | \
 	  env XDG_CACHE_HOME=.cache dhall-to-yaml --output $@
 
 examples: $(YAML_EXAMPLES)
