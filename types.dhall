@@ -95,7 +95,7 @@
     ./types/actions/HaskellSetup.dhall
       sha256:3cfef5c383d40623d0766715715c881583623bf6e11a0ad0b9946d8eaeffa6c5
 , actions/checkout =
-    ./types/actions/checkout.dhall
+    ./types/actions/Checkout.dhall
       sha256:bb5e351b16c5f15bdd76f111fc2ae43e1190e66b8805c429a05c2d41f661f30d
 , MergeGroup =
     ./types/events/MergeGroup.dhall
