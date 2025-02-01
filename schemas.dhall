@@ -71,7 +71,7 @@
     ./schemas/actions/HaskellSetup.dhall
       sha256:e6dbbacedf33965f5005dc2a22164d0a5edb3e09b2b4842104cec011c6d3c95d
 , actions/checkout =
-    ./schemas/actions/checkout.dhall
+    ./schemas/actions/Checkout.dhall
       sha256:d9c339bf138755db638c58f18d91dcd40a49f5905064af111b1b56d8eec57c5a
 , Concurrency =
     ./schemas/Concurrency.dhall
