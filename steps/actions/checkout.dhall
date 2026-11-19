@@ -1,13 +1,13 @@
 let List/concatMap =
-      https://prelude.dhall-lang.org/v17.1.0/List/concatMap.dhall
+      https://raw.githubusercontent.com/dhall-lang/dhall-lang/v23.1.0/Prelude/List/concatMap.dhall
         sha256:3b2167061d11fda1e4f6de0522cbe83e0d5ac4ef5ddf6bb0b2064470c5d3fb64
 
 let Map =
-      https://prelude.dhall-lang.org/v17.1.0/Map/package.dhall
-        sha256:598e9c76103b2686fbbda6cc30078f9e60dd846d9eaf155d0149cf0ae06c21c5
+      https://raw.githubusercontent.com/dhall-lang/dhall-lang/v23.1.0/Prelude/Map/package.dhall
+        sha256:c5e79a9de642644a09b96a2ec3147c5d8662b7926f09610e751c0c0f6ed0b30a
 
 let Optional/map =
-      https://prelude.dhall-lang.org/v17.1.0/Optional/map.dhall
+      https://raw.githubusercontent.com/dhall-lang/dhall-lang/v23.1.0/Prelude/Optional/map.dhall
         sha256:501534192d988218d43261c299cc1d1e0b13d25df388937add784778ab0054fa
 
 let Step = ../../schemas/Step.dhall
